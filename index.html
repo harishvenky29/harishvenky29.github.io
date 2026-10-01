@@ -350,7 +350,7 @@
           <article class="card activity-card">
             <div class="proj-num">01</div>
             <h3>Autonomous Rescue Robot</h3>
-            <p>MSc project: a Mecanum-wheeled robot that navigates a maze, avoids obstacles with IR and
+            <p>MSc team project (team lead, 4 engineers): a Mecanum-wheeled robot that navigates a maze, avoids obstacles with IR and
               ultrasonic sensors, and finds victims using a custom YOLOv5 model (86% mAP).</p>
             <div class="tag-row">
               <span class="tag">Python</span><span class="tag">C++</span><span class="tag">Arduino</span><span class="tag">Raspberry Pi</span><span
@@ -359,6 +359,39 @@
             <div class="project-links">
               <a class="btn primary small" href="https://www.youtube.com/watch?v=4F5axwGFdGk" target="_blank" rel="noopener">Demo video</a>
             </div>
+          </article>
+
+          <article class="card activity-card">
+            <div class="proj-num">02</div>
+            <h3>Autonomous Waypoint Navigation Robot</h3>
+            <p>A wheeled mobile robot that drives between two waypoints and back to its origin with no operator input,
+              fusing IR and ultrasonic readings to detect obstacles reliably and steer around them.</p>
+            <div class="tag-row">
+              <span class="tag">Arduino</span><span class="tag">Sensor Fusion</span><span class="tag">IR &amp; Ultrasonic</span><span
+                class="tag">Collision Avoidance</span>
+            </div>
+          </article>
+
+          <article class="card activity-card">
+            <div class="proj-num">03</div>
+            <h3>ROS 2 Autonomous Navigation</h3>
+            <p>A simulated TurtleBot3 that maps an unknown environment with SLAM Toolbox, then navigates to goals with Nav2, plus a custom waypoint-patrol node in Python.</p>
+            <div class="tag-row"><span class="tag">ROS 2</span><span class="tag">SLAM</span><span class="tag">Nav2</span><span class="tag">Gazebo</span><span class="tag">Python</span></div>
+          </article>
+
+          <article class="card activity-card">
+            <div class="proj-num">04</div>
+            <h3>LLM-Commanded Robot</h3>
+            <p>Natural-language control on top of the Nav2 robot: an LLM turns commands like "go to the kitchen, then come back" into navigation goals using tool calling.</p>
+            <div class="tag-row"><span class="tag">ROS 2</span><span class="tag">LLM</span><span class="tag">Tool Calling</span><span class="tag">Python</span></div>
+          </article>
+
+          <article class="card activity-card">
+            <div class="proj-num">05 <span class="proj-status">In progress</span></div>
+            <h3>Camera Vision to Robot Control</h3>
+            <p>Connecting a live camera feed to robot motion: detecting and tracking objects with computer vision, then
+              turning their position in the image into control commands that steer the robot.</p>
+            <div class="tag-row"><span class="tag">Computer Vision</span><span class="tag">OpenCV</span><span class="tag">YOLO</span><span class="tag">Robot Control</span><span class="tag">Python</span></div>
           </article>
 
           <!-- Add more projects here as new <article class="card activity-card"> blocks (02, 03...) -->
@@ -408,6 +441,16 @@
               <li>IR &amp; ultrasonic sensors</li>
               <li>Mecanum wheel &amp; encoder control</li>
               <li>PySerial</li>
+            </ul>
+          </div>
+
+          <div class="member-blurb card">
+            <h3>CAD &amp; Simulation</h3>
+            <ul>
+              <li>Autodesk Inventor</li>
+              <li>Autodesk Fusion 360</li>
+              <li>MATLAB</li>
+              <li>Simulink</li>
             </ul>
           </div>
 
@@ -810,10 +853,17 @@ Oracle Certified Associate, Java SE 8 Programmer (Feb 2022); Google/Coursera: Pr
 SKILLS:
 Robotics & AI: ROS/ROS2, SLAM, Sensor Fusion (LiDAR, IMU, Camera), Computer Vision, Reinforcement Learning, Gazebo
 Software: Java, Python, C++, C, SQL, Spring Boot, FastAPI, REST APIs, Docker, AWS, CI/CD, Git
+CAD: Autodesk Inventor, Autodesk Fusion 360
 ML & Data: PyTorch, TensorFlow, YOLO, HuggingFace, OpenCV, Scikit-learn, data analysis
+CAD & Simulation: Autodesk Inventor, Autodesk Fusion 360, MATLAB, Simulink
 
 PROJECTS:
 1. Autonomous Rescue Robot — Navigation & Vision System (MSc Intelligent Robotics, University of York, 2024). Autonomous ground robot for search-and-rescue in maze/disaster environments: navigates a maze, detects victims and obstacles, retrieves a target ("Mr. York"). Raspberry Pi central controller coordinating 3 Arduinos over UART with sequential polling; 4 IR sensors via TCA9548A I2C multiplexer plus ultrasonic sensors for 360° obstacle avoidance; Mecanum omnidirectional wheels with encoder feedback; custom YOLOv5 model (classes: Mr. York, Car, Blocks) trained via CVAT annotation, reaching 86% mAP, integrated with motor control for vision-guided victim approach. Tech: Python, C++ (Arduino), YOLOv5, OpenCV, PyTorch, PySerial, Arduino Nano 33 BLE, Raspberry Pi 4, GP2Y0E02B IR and HC-SR04 ultrasonic sensors. Demo video: https://www.youtube.com/watch?v=4F5axwGFdGk
+   Harish was team lead of a 4-person team on this project (integrated aerial and ground system); he also built the serial link to a custom two-jaw gripper so the robot could grasp the rescue object and return it to the start without operator input.
+2. Autonomous Waypoint Navigation Robot. Wheeled mobile robot that navigates autonomously between two defined waypoints and returns to its origin without operator input. Sensor fusion of IR and ultrasonic range data to improve detection reliability (compensating for IR sensitivity to surface reflectivity and ultrasonic errors on angled or soft surfaces). Reactive collision avoidance: detects obstacles, manoeuvres around them and resumes its route.
+3. ROS 2 Autonomous Navigation — TurtleBot3 in Gazebo, SLAM Toolbox mapping, Nav2 navigation, custom Python waypoint-patrol node.
+4. LLM-Commanded Robot — natural-language commands turned into Nav2 goals via LLM tool calling.
+5. Camera Vision to Robot Control — connects a live camera feed to robot motion: detects and tracks objects with computer vision (OpenCV, YOLO) and turns their image position into control commands for the robot. Still in progress, no final results yet.
 
 CONTACT:
 Email: mrharishv29@gmail.com · LinkedIn: https://www.linkedin.com/in/harish-venkatesan-m-r-833173191/ · GitHub: https://github.com/harishvenky29

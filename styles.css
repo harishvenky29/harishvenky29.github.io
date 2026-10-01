@@ -662,3 +662,34 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   border-color: var(--border-accent);
   transform: translateY(-1px);
 }
+
+/* ── Skills: 3 on top, 2 below on wide screens ── */
+@media (min-width: 1000px) {
+  .members-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .members-grid > .member-blurb { grid-column: span 2; }
+  .members-grid > .member-blurb:nth-last-child(2):nth-child(3n+1),
+  .members-grid > .member-blurb:nth-last-child(1):nth-child(3n+2) { grid-column: span 3; }
+}
+
+/* ── Project status badge ── */
+.proj-status {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+/* ── Projects: fill the last row evenly on wide screens ── */
+@media (min-width: 1000px) {
+  .activities-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .activities-grid > .activity-card { grid-column: span 2; }
+  .activities-grid > .activity-card:nth-last-child(2):nth-child(3n+1),
+  .activities-grid > .activity-card:nth-last-child(1):nth-child(3n+2) { grid-column: span 3; }
+}
