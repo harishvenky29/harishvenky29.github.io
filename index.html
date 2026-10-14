@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Harish Venkatesan | Portfolio</title>
   <meta name="description"
-    content="Personal portfolio of Harish Venkatesan — CS Engineer and MSc Intelligent Robotics graduate from the University of York." />
+    content="Personal portfolio of Harish Venkatesan — robotics and software engineer, MSc Intelligent Robotics graduate from the University of York." />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -73,7 +73,7 @@
             <a class="social-icon" href="https://www.linkedin.com/in/harish-venkatesan-m-r-833173191/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
             </a>
-            <a class="social-icon" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=mrharishv29@gmail.com" target="_blank" rel="noopener" aria-label="Email (opens Gmail)" title="Email">
+            <a class="social-icon" href="mailto:mrharishv29@gmail.com" aria-label="Email" title="Email">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
             </a>
           </div>
@@ -87,7 +87,7 @@
             </p>
             <p class="highlight-person">
               <span class="highlight-name">Harish Venkatesan</span><br />
-              MSc Intelligent Robotics · University of York
+              MSc Intelligent Robotics, University of York
             </p>
           </div>
         </div>
@@ -111,6 +111,11 @@
         <div class="stat-item">
           <div class="stat-val">7.51</div>
           <div class="stat-label">B.E. CGPA, First Class</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-val">5</div>
+          <div class="stat-label">Robotics Projects</div>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
@@ -217,7 +222,7 @@
             <div class="timeline-marker"></div>
             <div class="card timeline-card">
               <div class="timeline-meta">
-                <span class="timeline-period">2021</span>
+                <span class="timeline-period">Sep 2021 — Oct 2021</span>
                 <span class="timeline-badge">Achievement</span>
               </div>
               <h3>Grand Finalist — NeuralHack Season 5</h3>
@@ -231,7 +236,7 @@
             <div class="timeline-marker"></div>
             <div class="card timeline-card">
               <div class="timeline-meta">
-                <span class="timeline-period">2018 &nbsp;·&nbsp; 6 mos</span>
+                <span class="timeline-period">Mar 2018 — Aug 2018 &nbsp;·&nbsp; 6 mos</span>
                 <span class="timeline-badge">Member</span>
               </div>
               <h3>Robotics Team Member</h3>
@@ -272,7 +277,7 @@
             <div class="edu-badge completed">First Class · CGPA 7.51</div>
             <h3>B.E. Computer Science and Engineering</h3>
             <p class="edu-uni">KPR Institute of Engineering and Technology, Coimbatore · Anna University</p>
-            <p class="edu-year">2018 — 2022</p>
+            <p class="edu-year">Aug 2018 — May 2022</p>
             <p>Foundations in algorithms, data structures, operating systems and databases, with electives in
               Artificial Intelligence, Robotics, Natural Language Processing, IoT and Cloud Computing.</p>
           </article>
@@ -387,14 +392,15 @@
           </article>
 
           <article class="card activity-card">
+            <!-- When finished: delete the <span class="proj-status"> below -->
             <div class="proj-num">05 <span class="proj-status">In progress</span></div>
             <h3>Camera Vision to Robot Control</h3>
-            <p>Connecting a live camera feed to robot motion: detecting and tracking objects with computer vision, then
-              turning their position in the image into control commands that steer the robot.</p>
-            <div class="tag-row"><span class="tag">Computer Vision</span><span class="tag">OpenCV</span><span class="tag">YOLO</span><span class="tag">Robot Control</span><span class="tag">Python</span></div>
+            <p>A ROS 2 Jazzy system on Ubuntu 24.04, running in Gazebo simulation: a camera-equipped robot processes its
+              live feed with OpenCV, and what it detects drives the robot's movement, steering it towards the target.</p>
+            <div class="tag-row"><span class="tag">ROS 2</span><span class="tag">Gazebo</span><span class="tag">OpenCV</span><span class="tag">Python</span><span class="tag">Computer Vision</span></div>
           </article>
 
-          <!-- Add more projects here as new <article class="card activity-card"> blocks (02, 03...) -->
+          <!-- Add more projects here as new <article class="card activity-card"> blocks (06, 07...) -->
 
         </div>
       </div>
@@ -412,12 +418,13 @@
           <div class="member-blurb card">
             <h3>Robotics &amp; AI</h3>
             <ul>
-              <li>ROS / ROS2</li>
+              <li>ROS 2 (Jazzy) · rclpy</li>
+              <li>Nav2 · SLAM Toolbox</li>
+              <li>Gazebo · RViz · URDF / xacro</li>
               <li>SLAM &amp; Autonomous Navigation</li>
               <li>Sensor Fusion (LiDAR, IMU, Camera)</li>
-              <li>Computer Vision</li>
+              <li>Computer Vision · OpenCV</li>
               <li>Reinforcement Learning</li>
-              <li>Gazebo / MoveIt</li>
             </ul>
           </div>
 
@@ -449,8 +456,8 @@
             <ul>
               <li>Autodesk Inventor</li>
               <li>Autodesk Fusion 360</li>
-              <li>MATLAB</li>
-              <li>Simulink</li>
+              <li>MATLAB / Simulink</li>
+              <li>Gazebo simulation</li>
             </ul>
           </div>
 
@@ -461,6 +468,7 @@
               <li>Deep Learning (CNN, Transformers)</li>
               <li>Object Detection (YOLOv5) · CVAT</li>
               <li>HuggingFace Ecosystem · OpenCV</li>
+              <li>LLM Integration (Tool Calling)</li>
               <li>Scikit-learn</li>
               <li>Data Analysis (Google Data Analytics)</li>
             </ul>
@@ -487,7 +495,7 @@
         <div class="join-actions">
           <a href="https://github.com/harishvenky29" target="_blank" rel="noopener" class="btn primary full-width">View GitHub</a>
           <a href="https://www.linkedin.com/in/harish-venkatesan-m-r-833173191/" target="_blank" rel="noopener" class="btn ghost full-width">LinkedIn Profile</a>
-          <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=mrharishv29@gmail.com" target="_blank" rel="noopener" class="btn outline full-width">Send an Email</a>
+          <a href="mailto:mrharishv29@gmail.com" class="btn outline full-width">Send an Email</a>
         </div>
       </div>
     </section>
@@ -541,7 +549,7 @@
       bottom: 94px;
       right: 28px;
       width: 360px;
-      max-height: 520px;
+      max-height: min(520px, calc(100vh - 120px));
       background: #0c0e14;
       border: 1px solid rgba(199, 115, 19, 0.25);
       border-radius: 1.25rem;
@@ -839,23 +847,22 @@ NAME: Harish Venkatesan M R
 
 EDUCATION:
 - MSc Intelligent Robotics, University of York, UK — full-time, Sep 2023 to Sep 2024; graduated Jan 2025
-- B.E. Computer Science and Engineering, KPR Institute of Engineering and Technology, Coimbatore (Anna University) — 2018 to 2022, CGPA 7.51, First Class
+- B.E. Computer Science and Engineering, KPR Institute of Engineering and Technology, Coimbatore (Anna University) — Aug 2018 to May 2022, CGPA 7.51, First Class
 
 EXPERIENCE:
 - Associate Engineer – Technology at Virtusa Consulting Services Pvt Ltd, Chennai — May 2022 to Sep 2023 (about 15 months). Enterprise software, REST APIs, Spring Boot backends, CI/CD, AWS.
 - Intern – Delivery at Virtusa Consulting Services Pvt Ltd — Jan 2022 to Mar 2022. Backend tasks, testing, code reviews, Java, Spring Boot.
-- Grand Finalist, Virtusa NeuralHack Season 5 (2021): selected in the top 250 out of 100,000+ (1 lakh+) participants, which led to a pre-placement offer.
-- Member of SP Robotics for 6 months in 2018, teaching robotics alongside the group's senior staff.
+- Grand Finalist, Virtusa NeuralHack Season 5 (Sep–Oct 2021): selected in the top 250 out of 100,000+ (1 lakh+) participants, which led to a pre-placement offer.
+- Member of SP Robotics for 6 months (Mar–Aug 2018), teaching robotics alongside the group's senior staff.
 
 CERTIFICATIONS:
 Oracle Certified Associate, Java SE 8 Programmer (Feb 2022); Google/Coursera: Prepare Data for Exploration (Sep 2021), Ask Questions to Make Data-Driven Decisions (Aug 2021) and Foundations: Data, Data, Everywhere (Aug 2021); Machine Learning, SkillUp by Simplilearn (Jul 2021); HackerRank Problem Solving (Basic) (Feb 2021); Udemy Artificial Intelligence A-Z (May 2020); National Level Quiz on Python Programming, Sigma Institute of Engineering (participation).
 
 SKILLS:
-Robotics & AI: ROS/ROS2, SLAM, Sensor Fusion (LiDAR, IMU, Camera), Computer Vision, Reinforcement Learning, Gazebo
+Robotics & AI: ROS 2 (Jazzy), rclpy, Nav2, SLAM Toolbox, Gazebo, RViz, URDF/xacro, SLAM, Sensor Fusion (LiDAR, IMU, Camera), Computer Vision, OpenCV, Reinforcement Learning
 Software: Java, Python, C++, C, SQL, Spring Boot, FastAPI, REST APIs, Docker, AWS, CI/CD, Git
-CAD: Autodesk Inventor, Autodesk Fusion 360
-ML & Data: PyTorch, TensorFlow, YOLO, HuggingFace, OpenCV, Scikit-learn, data analysis
-CAD & Simulation: Autodesk Inventor, Autodesk Fusion 360, MATLAB, Simulink
+ML & Data: PyTorch, TensorFlow, YOLOv5, HuggingFace, OpenCV, Scikit-learn, LLM integration (tool calling), data analysis
+CAD & Simulation: Autodesk Inventor, Autodesk Fusion 360, MATLAB/Simulink, Gazebo
 
 PROJECTS:
 1. Autonomous Rescue Robot — Navigation & Vision System (MSc Intelligent Robotics, University of York, 2024). Autonomous ground robot for search-and-rescue in maze/disaster environments: navigates a maze, detects victims and obstacles, retrieves a target ("Mr. York"). Raspberry Pi central controller coordinating 3 Arduinos over UART with sequential polling; 4 IR sensors via TCA9548A I2C multiplexer plus ultrasonic sensors for 360° obstacle avoidance; Mecanum omnidirectional wheels with encoder feedback; custom YOLOv5 model (classes: Mr. York, Car, Blocks) trained via CVAT annotation, reaching 86% mAP, integrated with motor control for vision-guided victim approach. Tech: Python, C++ (Arduino), YOLOv5, OpenCV, PyTorch, PySerial, Arduino Nano 33 BLE, Raspberry Pi 4, GP2Y0E02B IR and HC-SR04 ultrasonic sensors. Demo video: https://www.youtube.com/watch?v=4F5axwGFdGk
@@ -863,7 +870,7 @@ PROJECTS:
 2. Autonomous Waypoint Navigation Robot. Wheeled mobile robot that navigates autonomously between two defined waypoints and returns to its origin without operator input. Sensor fusion of IR and ultrasonic range data to improve detection reliability (compensating for IR sensitivity to surface reflectivity and ultrasonic errors on angled or soft surfaces). Reactive collision avoidance: detects obstacles, manoeuvres around them and resumes its route.
 3. ROS 2 Autonomous Navigation — TurtleBot3 in Gazebo, SLAM Toolbox mapping, Nav2 navigation, custom Python waypoint-patrol node.
 4. LLM-Commanded Robot — natural-language commands turned into Nav2 goals via LLM tool calling.
-5. Camera Vision to Robot Control — connects a live camera feed to robot motion: detects and tracks objects with computer vision (OpenCV, YOLO) and turns their image position into control commands for the robot. Still in progress, no final results yet.
+5. Camera Vision to Robot Control — built with ROS 2 Jazzy on Ubuntu 24.04, running in Gazebo simulation. A camera feed is processed with OpenCV, and what it detects drives the robot's movement. Tech: ROS 2, Gazebo, OpenCV, Python, computer vision. Still in progress, no final results yet.
 
 CONTACT:
 Email: mrharishv29@gmail.com · LinkedIn: https://www.linkedin.com/in/harish-venkatesan-m-r-833173191/ · GitHub: https://github.com/harishvenky29
@@ -942,120 +949,193 @@ Keep answers short (2-4 sentences). Be friendly and professional. If asked somet
   </script>
   <script>
     // ── Animated Background ──
+    // Drifting node network on a faint grid, with:
+    //  • "signal" pulses that travel along links between nodes
+    //  • a slow sensor-style scan band sweeping down the screen
+    //  • cursor "sensing": nearby nodes link to the pointer and glow
     (function () {
       const canvas = document.getElementById('bgCanvas');
       const ctx = canvas.getContext('2d');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
       const ORANGE = 'rgba(199, 115, 19,';
       const WHITE = 'rgba(255, 255, 255,';
+      const LINK_DIST = 130;
+      const SENSE_DIST = 160;
 
-      let W, H, particles, mouse = { x: -9999, y: -9999 };
+      let W, H, particles = [], pulses = [], scanY = 0, t = 0;
+      const mouse = { x: -9999, y: -9999 };
 
       function resize() {
-        W = canvas.width = window.innerWidth;
-        H = canvas.height = window.innerHeight;
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        W = window.innerWidth;
+        H = window.innerHeight;
+        canvas.width = W * dpr;
+        canvas.height = H * dpr;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       }
 
-      // ── Particle ──
+      // ── Node ──
       function Particle() {
-        this.reset();
-      }
-      Particle.prototype.reset = function () {
         this.x = Math.random() * W;
         this.y = Math.random() * H;
-        this.size = Math.random() * 1.4 + 0.4;
-        this.vx = (Math.random() - 0.5) * 0.35;
-        this.vy = (Math.random() - 0.5) * 0.35;
-        this.life = Math.random();          // phase offset for pulse
-        this.speed = 0.003 + Math.random() * 0.004;
-        this.isOrange = Math.random() < 0.18; // 18% orange, rest dim white
-      };
+        this.size = Math.random() * 1.4 + 0.5;
+        const angle = Math.random() * Math.PI * 2;
+        const speed = 0.08 + Math.random() * 0.22;
+        this.vx = Math.cos(angle) * speed;
+        this.vy = Math.sin(angle) * speed;
+        this.phase = Math.random() * Math.PI * 2;
+        this.isOrange = Math.random() < 0.2;
+        this.glow = 0; // lights up when a pulse arrives or the cursor is near
+      }
       Particle.prototype.update = function () {
         this.x += this.vx;
         this.y += this.vy;
-        this.life += this.speed;
+        this.phase += 0.02;
+        this.glow *= 0.94;
 
-        // Mouse repulsion
-        const dx = this.x - mouse.x;
-        const dy = this.y - mouse.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < 100) {
-          const force = (100 - dist) / 100;
-          this.x += (dx / dist) * force * 1.2;
-          this.y += (dy / dist) * force * 1.2;
+        const dx = this.x - mouse.x, dy = this.y - mouse.y;
+        const dist = Math.hypot(dx, dy);
+        if (dist < SENSE_DIST) this.glow = Math.max(this.glow, 1 - dist / SENSE_DIST);
+        if (dist < 70 && dist > 0) { // gentle push away from the cursor
+          const f = (70 - dist) / 70 * 0.8;
+          this.x += (dx / dist) * f;
+          this.y += (dy / dist) * f;
         }
 
-        // Wrap edges
-        if (this.x < -10) this.x = W + 10;
-        if (this.x > W + 10) this.x = -10;
-        if (this.y < -10) this.y = H + 10;
-        if (this.y > H + 10) this.y = -10;
+        if (this.x < -20) this.x = W + 20;
+        if (this.x > W + 20) this.x = -20;
+        if (this.y < -20) this.y = H + 20;
+        if (this.y > H + 20) this.y = -20;
       };
       Particle.prototype.draw = function () {
-        const pulse = 0.3 + 0.7 * ((Math.sin(this.life * Math.PI * 2) + 1) / 2);
-        const alpha = this.isOrange ? pulse * 0.75 : pulse * 0.25;
-        const col = this.isOrange ? ORANGE : WHITE;
+        const pulse = 0.35 + 0.65 * ((Math.sin(this.phase) + 1) / 2);
+        const base = this.isOrange ? 0.7 : 0.22;
+        const alpha = Math.min(1, pulse * base + this.glow * 0.8);
+        const lit = this.isOrange || this.glow > 0.15;
+        const r = this.size + this.glow * 1.6;
+        if (this.glow > 0.2) { // soft halo
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, r * 4, 0, Math.PI * 2);
+          ctx.fillStyle = ORANGE + (this.glow * 0.08) + ')';
+          ctx.fill();
+        }
         ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = col + alpha + ')';
+        ctx.arc(this.x, this.y, r, 0, Math.PI * 2);
+        ctx.fillStyle = (lit ? ORANGE : WHITE) + alpha + ')';
         ctx.fill();
       };
 
-      // ── Grid lines (subtle) ──
+      // ── Grid ──
       function drawGrid() {
         const spacing = 80;
-        const alpha = 0.025;
-        ctx.strokeStyle = ORANGE + alpha + ')';
+        ctx.strokeStyle = ORANGE + '0.025)';
         ctx.lineWidth = 0.5;
+        ctx.beginPath();
+        for (let x = 0; x < W; x += spacing) { ctx.moveTo(x, 0); ctx.lineTo(x, H); }
+        for (let y = 0; y < H; y += spacing) { ctx.moveTo(0, y); ctx.lineTo(W, y); }
+        ctx.stroke();
 
-        for (let x = 0; x < W; x += spacing) {
-          ctx.beginPath();
-          ctx.moveTo(x, 0);
-          ctx.lineTo(x, H);
-          ctx.stroke();
-        }
+        // Grid intersections brighten as the scan band passes
         for (let y = 0; y < H; y += spacing) {
-          ctx.beginPath();
-          ctx.moveTo(0, y);
-          ctx.lineTo(W, y);
-          ctx.stroke();
+          const d = Math.abs(y - scanY);
+          if (d > 140) continue;
+          const a = (1 - d / 140) * 0.35;
+          ctx.fillStyle = ORANGE + a + ')';
+          for (let x = 0; x < W; x += spacing) ctx.fillRect(x - 1, y - 1, 2, 2);
         }
       }
 
-      // ── Connection lines between nearby particles ──
+      // ── Scan band (like a LiDAR / camera sweep) ──
+      function drawScan() {
+        const band = ctx.createLinearGradient(0, scanY - 120, 0, scanY + 4);
+        band.addColorStop(0, ORANGE + '0)');
+        band.addColorStop(1, ORANGE + '0.045)');
+        ctx.fillStyle = band;
+        ctx.fillRect(0, scanY - 120, W, 124);
+        ctx.fillStyle = ORANGE + '0.12)';
+        ctx.fillRect(0, scanY, W, 1);
+      }
+
+      // ── Links, cursor links, and pulse spawning ──
       function drawConnections() {
-        const maxDist = 120;
+        const neighbours = [];
         for (let i = 0; i < particles.length; i++) {
+          const a = particles[i];
           for (let j = i + 1; j < particles.length; j++) {
-            const a = particles[i], b = particles[j];
+            const b = particles[j];
             const dx = a.x - b.x, dy = a.y - b.y;
-            const dist = Math.sqrt(dx * dx + dy * dy);
-            if (dist < maxDist) {
-              const alpha = (1 - dist / maxDist) * 0.12;
-              const useOrange = a.isOrange || b.isOrange;
-              ctx.beginPath();
-              ctx.moveTo(a.x, a.y);
-              ctx.lineTo(b.x, b.y);
-              ctx.strokeStyle = (useOrange ? ORANGE : WHITE) + alpha + ')';
-              ctx.lineWidth = 0.6;
-              ctx.stroke();
-            }
+            const d2 = dx * dx + dy * dy;
+            if (d2 > LINK_DIST * LINK_DIST) continue;
+            const dist = Math.sqrt(d2);
+            const glow = Math.max(a.glow, b.glow);
+            const alpha = (1 - dist / LINK_DIST) * (0.1 + glow * 0.25);
+            const useOrange = a.isOrange || b.isOrange || glow > 0.15;
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.strokeStyle = (useOrange ? ORANGE : WHITE) + alpha + ')';
+            ctx.lineWidth = 0.6;
+            ctx.stroke();
+            neighbours.push([a, b]);
+          }
+          // Cursor "sensing" lines
+          const mdx = a.x - mouse.x, mdy = a.y - mouse.y;
+          const md = Math.hypot(mdx, mdy);
+          if (md < SENSE_DIST) {
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(mouse.x, mouse.y);
+            ctx.strokeStyle = ORANGE + ((1 - md / SENSE_DIST) * 0.28) + ')';
+            ctx.lineWidth = 0.7;
+            ctx.stroke();
           }
         }
+        // Occasionally fire a signal pulse along a random link
+        if (neighbours.length && pulses.length < 6 && Math.random() < 0.04) {
+          const [a, b] = neighbours[Math.floor(Math.random() * neighbours.length)];
+          pulses.push({ from: a, to: b, p: 0, speed: 0.012 + Math.random() * 0.012 });
+        }
       }
 
-      // ── Ambient glows ──
+      // ── Signal pulses ──
+      function drawPulses() {
+        pulses = pulses.filter(pl => {
+          pl.p += pl.speed;
+          if (pl.p >= 1) { pl.to.glow = 1; return false; }
+          const x = pl.from.x + (pl.to.x - pl.from.x) * pl.p;
+          const y = pl.from.y + (pl.to.y - pl.from.y) * pl.p;
+          // short trail
+          const tx = pl.from.x + (pl.to.x - pl.from.x) * Math.max(0, pl.p - 0.18);
+          const ty = pl.from.y + (pl.to.y - pl.from.y) * Math.max(0, pl.p - 0.18);
+          const g = ctx.createLinearGradient(tx, ty, x, y);
+          g.addColorStop(0, ORANGE + '0)');
+          g.addColorStop(1, ORANGE + '0.7)');
+          ctx.beginPath();
+          ctx.moveTo(tx, ty);
+          ctx.lineTo(x, y);
+          ctx.strokeStyle = g;
+          ctx.lineWidth = 1.2;
+          ctx.stroke();
+          ctx.beginPath();
+          ctx.arc(x, y, 1.8, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(240, 160, 60, 0.95)';
+          ctx.fill();
+          return true;
+        });
+      }
+
+      // ── Ambient glows (slowly breathing) ──
       function drawGlows() {
-        // Right glow (orange)
-        const g1 = ctx.createRadialGradient(W * 0.85, H * 0.35, 0, W * 0.85, H * 0.35, 380);
-        g1.addColorStop(0, ORANGE + '0.06)');
+        const breathe = 0.5 + 0.5 * Math.sin(t * 0.004);
+        const g1 = ctx.createRadialGradient(W * 0.85, H * 0.35, 0, W * 0.85, H * 0.35, 380 + breathe * 60);
+        g1.addColorStop(0, ORANGE + (0.05 + breathe * 0.025) + ')');
         g1.addColorStop(1, ORANGE + '0)');
         ctx.fillStyle = g1;
         ctx.fillRect(0, 0, W, H);
 
-        // Left subtle glow (cool)
-        const g2 = ctx.createRadialGradient(W * 0.1, H * 0.6, 0, W * 0.1, H * 0.6, 280);
-        g2.addColorStop(0, 'rgba(30, 58, 100, 0.07)');
+        const g2 = ctx.createRadialGradient(W * 0.1, H * 0.6, 0, W * 0.1, H * 0.6, 300);
+        g2.addColorStop(0, 'rgba(30, 58, 100, 0.08)');
         g2.addColorStop(1, 'rgba(30, 58, 100, 0)');
         ctx.fillStyle = g2;
         ctx.fillRect(0, 0, W, H);
@@ -1063,24 +1143,36 @@ Keep answers short (2-4 sentences). Be friendly and professional. If asked somet
 
       function init() {
         resize();
-        const count = Math.floor((W * H) / 10000);
-        particles = Array.from({ length: Math.min(count, 130) }, () => new Particle());
+        const count = Math.floor((W * H) / 11000);
+        particles = Array.from({ length: Math.max(30, Math.min(count, 120)) }, () => new Particle());
+        scanY = H * 0.2;
+      }
+
+      function frame() {
+        ctx.clearRect(0, 0, W, H);
+        drawGlows();
+        drawScan();
+        drawGrid();
+        drawConnections();
+        drawPulses();
+        particles.forEach(p => { p.update(); p.draw(); });
       }
 
       function loop() {
-        ctx.clearRect(0, 0, W, H);
-        drawGrid();
-        drawGlows();
-        drawConnections();
-        particles.forEach(p => { p.update(); p.draw(); });
+        t++;
+        scanY += 0.6;
+        if (scanY > H + 140) scanY = -20;
+        frame();
         requestAnimationFrame(loop);
       }
 
-      window.addEventListener('resize', () => { resize(); });
+      window.addEventListener('resize', resize);
       window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+      document.addEventListener('mouseleave', () => { mouse.x = mouse.y = -9999; });
 
       init();
-      loop();
+      if (reduceMotion) frame(); // one static frame for people who turn off motion
+      else loop();
     })();
   </script>
 
@@ -1282,7 +1374,15 @@ Keep answers short (2-4 sentences). Be friendly and professional. If asked somet
       const modal = document.getElementById('resumeModal');
       const close = document.getElementById('resumeClose');
 
-      function openModal() { modal.classList.add('open'); document.body.style.overflow = 'hidden'; }
+      // Phones and tablets often can't show a PDF inside an iframe (blank or first page only),
+      // so on small screens open the PDF directly in the browser's own viewer instead.
+      const smallScreen = window.matchMedia('(max-width: 767px)');
+
+      function openModal() {
+        if (smallScreen.matches) { window.open('resume.pdf', '_blank', 'noopener'); return; }
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
       function closeModal() { modal.classList.remove('open'); document.body.style.overflow = ''; }
 
       if (btn) btn.addEventListener('click', openModal);

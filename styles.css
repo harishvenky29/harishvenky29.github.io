@@ -326,7 +326,7 @@ p { margin: 0 0 1.5rem; line-height: 1.85; }
 
 /* ── Purpose grid ── */
 .purpose-grid {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
 }
 
 /* ── Timeline ── */
@@ -399,7 +399,7 @@ p { margin: 0 0 1.5rem; line-height: 1.85; }
 
 /* ── Education ── */
 .edu-grid {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
 }
 .edu-card { position: relative; }
 .edu-badge {
@@ -432,7 +432,7 @@ p { margin: 0 0 1.5rem; line-height: 1.85; }
 
 /* ── Activities (Projects) ── */
 .activities-grid {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
 }
 .activity-card { position: relative; }
 .proj-num {
@@ -448,7 +448,7 @@ p { margin: 0 0 1.5rem; line-height: 1.85; }
 .members-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
 }
 .member-blurb { }
 .member-blurb h3 { margin-top: 0; margin-bottom: 0.9rem; }
@@ -586,9 +586,10 @@ p { margin: 0 0 1.5rem; line-height: 1.85; }
   pointer-events: none;
 }
 
-html, body {
-  background: #030712;
-}
+/* Solid colour on <html> only: a background on <body> would paint over the
+   canvas (z-index -1) and hide the animation */
+html { background: #030712; }
+body { background: transparent; }
 
 /* Ensure all content sits above canvas */
 main,
@@ -602,7 +603,7 @@ footer {
 }
 /* ── Certifications ── */
 .cert-grid {
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
 }
 .cert-card {
   display: flex;
@@ -692,4 +693,24 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   .activities-grid > .activity-card { grid-column: span 2; }
   .activities-grid > .activity-card:nth-last-child(2):nth-child(3n+1),
   .activities-grid > .activity-card:nth-last-child(1):nth-child(3n+2) { grid-column: span 3; }
+}
+/* ── Mobile refinements ── */
+@media (max-width: 767px) {
+  /* Shorter sections on phones, so content isn't stretched to full screen height */
+  .section, .join-section { min-height: auto; padding: 5rem 0; }
+  .hero { min-height: auto; padding: 6.5rem 0 3.5rem; }
+
+  /* 5 stats: 3 on the first row, 2 on the second */
+  .stat-item { flex: 1 1 33%; min-width: 0; padding: 0.6rem 0.5rem; }
+  .stat-val { font-size: 1.5rem; }
+  .stat-label { font-size: 0.65rem; }
+
+  /* Keep the floating chat button clear of the footer links */
+  .site-footer { padding-bottom: 5.5rem; }
+
+  .timeline { padding-left: 1.5rem; }
+  .timeline-marker { left: -1.87rem; }
+
+  /* Bigger tap targets in the mobile menu */
+  .nav a { padding: 0.5rem 0; width: 100%; }
 }
