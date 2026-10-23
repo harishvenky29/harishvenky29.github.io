@@ -8,6 +8,19 @@
   <meta name="description"
     content="Personal portfolio of Harish Venkatesan — robotics and software engineer, MSc Intelligent Robotics graduate from the University of York." />
   <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+  <meta name="theme-color" content="#030712" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://harishvenky29.github.io/" />
+  <meta property="og:title" content="Harish Venkatesan | Robotics &amp; Software Engineer" />
+  <meta property="og:description"
+    content="MSc Intelligent Robotics (York). ROS 2, computer vision and software engineering projects." />
+  <meta property="og:image" content="https://harishvenky29.github.io/images/og-preview.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Harish Venkatesan, Robotics &amp; Software Engineer: portfolio preview" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://harishvenky29.github.io/images/og-preview.jpg" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,12 +34,17 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#top" class="logo">H<span>V</span></a>
+      <a href="#top" class="logo" aria-label="Harish Venkatesan, back to top">
+        <img class="logo-mark" src="favicon.png" alt="" width="34" height="34" />
+        <span class="logo-text">H<span>V</span></span>
+      </a>
       <nav class="nav" id="nav">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -44,14 +62,13 @@
         <div class="hero-text">
           <h1>Hi, I'm <span class="accent-name">Harish</span></h1>
           <p class="hero-tagline">
-            &nbsp;<span class="typewriter-wrap"><span class="typewriter" id="typewriter"></span><span
+            <span class="typewriter-wrap"><span class="typewriter" id="typewriter"></span><span
                 class="typewriter-cursor">|</span></span>
           </p>
           <p class="hero-body">
-            Computer Science Engineer with 15 months of full-time industry experience at Virtusa
-            and an MSc in Intelligent Robotics from the University of York (graduated Jan 2025).
-            I build systems that sense, reason, and act — bridging software engineering
-            with autonomous machine intelligence.
+            I build robots that map, navigate and respond to voice and vision — using ROS 2, SLAM,
+            Nav2, OpenCV and LLM tool calling. MSc Intelligent Robotics graduate from the University
+            of York, with 15 months as a software engineer at Virtusa behind me.
           </p>
           <div class="hero-actions">
             <a href="#projects" class="btn primary">View Projects</a>
@@ -80,6 +97,12 @@
         </div>
 
         <div class="hero-highlight">
+          <figure class="portrait">
+            <img src="images/harish.jpg" alt="Portrait of Harish Venkatesan" width="640" height="800" />
+            <span class="bbox-corner tl"></span><span class="bbox-corner tr"></span>
+            <span class="bbox-corner bl"></span><span class="bbox-corner br"></span>
+            <figcaption class="bbox-label">harish <span>0.98</span></figcaption>
+          </figure>
           <div class="highlight-card">
             <p class="highlight-quote">
               "The real promise of robots is not that they will do what
@@ -114,12 +137,12 @@
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
-          <div class="stat-val">5</div>
+          <div class="stat-val">6</div>
           <div class="stat-label">Robotics Projects</div>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
-          <div class="stat-val">8</div>
+          <div class="stat-val">6</div>
           <div class="stat-label">Certifications</div>
         </div>
       </div>
@@ -129,6 +152,7 @@
     <section class="section" id="about">
       <div class="container">
         <div class="section-header">
+          <p class="eyebrow">01 · About</p>
           <h2>About Me</h2>
           <p class="section-subtitle">
             Engineer by training, roboticist by choice — I work at the intersection of software and intelligent
@@ -137,28 +161,28 @@
         </div>
         <div class="grid purpose-grid">
           <article class="card">
-            <div class="card-icon">🤖</div>
+            <div class="card-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="8" width="14" height="11" rx="2.5"/><path d="M12 8V4.5"/><circle cx="12" cy="3.5" r="1"/><circle cx="9" cy="13" r="1.2"/><circle cx="15" cy="13" r="1.2"/><path d="M9.5 16.5h5M3 12v3M21 12v3"/></svg></div>
             <h3>Intelligent Robotics</h3>
             <p>Completed a full-time MSc in Intelligent Robotics at the University of York (Sep 2023 – Sep 2024),
               focusing on autonomous systems, robotic perception and AI for real-world robots.</p>
           </article>
           <article class="card">
-            <div class="card-icon">💻</div>
+            <div class="card-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg></div>
             <h3>Software Engineering</h3>
             <p>15 months as an Associate Engineer – Technology at Virtusa, after a three-month internship —
               working on enterprise software delivery in agile teams.</p>
           </article>
           <article class="card">
-            <div class="card-icon">🧠</div>
+            <div class="card-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 6.8 10.3 11M7 17.2l3.3-4.2M13.7 11 17 6.8M13.7 13l3.3 4.2"/></svg></div>
             <h3>Machine Learning</h3>
-            <p>Studied Artificial Intelligence, Natural Language Processing and Robotics during my B.E., backed by
-              certifications in Machine Learning and AI.</p>
+            <p>Trained a custom YOLOv5 detector (86% mAP) for victim detection and built LLM tool-calling control
+              for a ROS 2 robot, on top of AI and NLP studies during my B.E.</p>
           </article>
           <article class="card">
-            <div class="card-icon">⚙️</div>
-            <h3>Systems Thinking</h3>
-            <p>Bringing an engineer's mindset to research — focused on building systems that don't just work in theory,
-              but hold up in the real world.</p>
+            <div class="card-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><circle cx="17" cy="9" r="2.3"/><path d="M15.5 14.2A4.5 4.5 0 0 1 21 18.5"/></svg></div>
+            <h3>Leadership</h3>
+            <p>Led a 4-person MSc robotics team on the rescue robot, and a 6-person build challenge at Virtusa that
+              still delivered after the team shrank to three, keeping people motivated and focused on delivery.</p>
           </article>
         </div>
       </div>
@@ -168,8 +192,9 @@
     <section class="section alt" id="experience">
       <div class="container">
         <div class="section-header">
+          <p class="eyebrow">02 · Experience</p>
           <h2>Experience</h2>
-          <p class="section-subtitle">From a hackathon win to industry software engineering.</p>
+          <p class="section-subtitle">From a national hackathon to industry software engineering.</p>
         </div>
 
         <div class="timeline">
@@ -206,8 +231,9 @@
               </div>
               <h3>Intern – Delivery</h3>
               <p class="timeline-org">Virtusa Consulting Services Pvt Ltd</p>
-              <p>Gained hands-on exposure to enterprise software development workflows, supporting the team on backend
-                tasks, testing, and code reviews, before converting to a full-time role after graduation.</p>
+              <p>Led a team of six through a three-month build challenge; when the team shrank to three, kept everyone
+                motivated and still delivered the build. Supported backend tasks, testing and code reviews, and was
+                converted to a full-time role after graduation.</p>
               <div class="tag-row">
                 <span class="tag">Java</span>
                 <span class="tag">Spring Boot</span>
@@ -259,6 +285,7 @@
     <section class="section" id="education">
       <div class="container">
         <div class="section-header">
+          <p class="eyebrow">03 · Education</p>
           <h2>Education</h2>
           <p class="section-subtitle">Academic foundations across software engineering and intelligent systems.</p>
         </div>
@@ -286,88 +313,21 @@
       </div>
     </section>
 
-    <!-- CERTIFICATIONS -->
-    <section class="section alt" id="certifications">
-      <div class="container">
-        <div class="section-header">
-          <h2>Certifications</h2>
-          <p class="section-subtitle">Credentials in programming, data and AI, with links to verify where available.</p>
-        </div>
-        <div class="grid cert-grid">
-
-          <article class="card cert-card cert-featured">
-            <p class="cert-issuer">Oracle University · Feb 2022</p>
-            <h3>Oracle Certified Associate, Java SE 8 Programmer</h3>
-          </article>
-
-          <article class="card cert-card">
-            <p class="cert-issuer">Google · Coursera · Sep 2021</p>
-            <h3>Prepare Data for Exploration</h3>
-            <a class="cert-link" href="https://coursera.org/verify/SWQWRDZ6J4PG" target="_blank" rel="noopener">Verify credential</a>
-          </article>
-
-          <article class="card cert-card">
-            <p class="cert-issuer">Google · Coursera · Aug 2021</p>
-            <h3>Ask Questions to Make Data-Driven Decisions</h3>
-            <a class="cert-link" href="https://coursera.org/verify/PX5DNCV2L37W" target="_blank" rel="noopener">Verify credential</a>
-          </article>
-
-          <article class="card cert-card">
-            <p class="cert-issuer">Google · Coursera · Aug 2021</p>
-            <h3>Foundations: Data, Data, Everywhere</h3>
-            <a class="cert-link" href="https://coursera.org/verify/7W42XNZTW6PU" target="_blank" rel="noopener">Verify credential</a>
-          </article>
-
-          <article class="card cert-card">
-            <p class="cert-issuer">SkillUp by Simplilearn · Jul 2021</p>
-            <h3>Machine Learning</h3>
-          </article>
-
-          <article class="card cert-card">
-            <p class="cert-issuer">HackerRank · Feb 2021</p>
-            <h3>Problem Solving (Basic)</h3>
-          </article>
-
-          <article class="card cert-card">
-            <p class="cert-issuer">Udemy · May 2020 · 16.5 hours</p>
-            <h3>Artificial Intelligence A–Z: Learn How To Build An AI</h3>
-            <a class="cert-link" href="https://ude.my/UC-f3851d26-d5dd-48bc-b643-a84cd81b9af0" target="_blank" rel="noopener">Verify credential</a>
-          </article>
-
-          <article class="card cert-card">
-            <p class="cert-issuer">Sigma Institute of Engineering · ISTE</p>
-            <h3>National Level Quiz on Python Programming</h3>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
     <!-- PROJECTS -->
-    <section class="section" id="projects">
+    <section class="section alt" id="projects">
       <div class="container">
         <div class="section-header">
+          <p class="eyebrow">04 · Projects</p>
           <h2>Projects</h2>
           <p class="section-subtitle">Selected work across Robotics, AI, and Software Engineering.</p>
         </div>
         <div class="grid activities-grid">
 
           <article class="card activity-card">
+            <div class="proj-media proj-photo">
+              <img src="images/waypoint-robot.jpg" alt="The waypoint navigation robot: a Raspberry Pi and sensor board on a two-wheeled chassis with an ultrasonic sensor at the front" width="960" height="480" loading="lazy" />
+            </div>
             <div class="proj-num">01</div>
-            <h3>Autonomous Rescue Robot</h3>
-            <p>MSc team project (team lead, 4 engineers): a Mecanum-wheeled robot that navigates a maze, avoids obstacles with IR and
-              ultrasonic sensors, and finds victims using a custom YOLOv5 model (86% mAP).</p>
-            <div class="tag-row">
-              <span class="tag">Python</span><span class="tag">C++</span><span class="tag">Arduino</span><span class="tag">Raspberry Pi</span><span
-                class="tag">YOLOv5</span><span class="tag">OpenCV</span><span class="tag">Sensor Fusion</span>
-            </div>
-            <div class="project-links">
-              <a class="btn primary small" href="https://www.youtube.com/watch?v=4F5axwGFdGk" target="_blank" rel="noopener">Demo video</a>
-            </div>
-          </article>
-
-          <article class="card activity-card">
-            <div class="proj-num">02</div>
             <h3>Autonomous Waypoint Navigation Robot</h3>
             <p>A wheeled mobile robot that drives between two waypoints and back to its origin with no operator input,
               fusing IR and ultrasonic readings to detect obstacles reliably and steer around them.</p>
@@ -378,38 +338,118 @@
           </article>
 
           <article class="card activity-card">
+            <a class="proj-media proj-photo" href="https://www.youtube.com/watch?v=4F5axwGFdGk" target="_blank" rel="noopener" aria-label="Watch the Autonomous Rescue Robot demo video">
+              <img src="images/rescue-robot.jpg" alt="The rescue robot in the test maze, approaching the Mr. York target robot" width="741" height="515" loading="lazy" />
+              <span class="play-badge"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Watch demo</span>
+            </a>
+            <div class="proj-num">02</div>
+            <h3>Autonomous Rescue Robot</h3>
+            <p>MSc team project (team lead, 4 engineers): a Mecanum-wheeled robot that navigates a maze, avoids obstacles with IR and
+              ultrasonic sensors, and finds victims using a custom YOLOv5 model (86% mAP).</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">C++</span><span class="tag">Arduino</span><span class="tag">Raspberry Pi</span><span
+                class="tag">YOLOv5</span><span class="tag">OpenCV</span><span class="tag">Sensor Fusion</span>
+            </div>
+            <div class="project-links">
+              <a class="btn primary small" href="https://github.com/harishvenky29/Rescue-Robot" target="_blank" rel="noopener">GitHub repo</a>
+            </div>
+          </article>
+
+          <article class="card activity-card">
+            <div class="proj-media proj-photo">
+              <video autoplay muted loop playsinline preload="metadata" poster="images/ur5-trajectory.jpg" aria-label="MATLAB simulation of the UR5 arm tracking a trajectory through four waypoints">
+                <source src="images/ur5-trajectory.mp4" type="video/mp4" />
+              </video>
+              <span class="play-badge">MATLAB simulation</span>
+            </div>
             <div class="proj-num">03</div>
-            <h3>ROS 2 Autonomous Navigation</h3>
-            <p>A simulated TurtleBot3 that maps an unknown environment with SLAM Toolbox, then navigates to goals with Nav2, plus a custom waypoint-patrol node in Python.</p>
-            <div class="tag-row"><span class="tag">ROS 2</span><span class="tag">SLAM</span><span class="tag">Nav2</span><span class="tag">Gazebo</span><span class="tag">Python</span></div>
+            <h3>UR5 Computed-Torque Control</h3>
+            <p>A 6-DOF UR5 arm modelled in MATLAB/Simulink, comparing a model-based computed-torque controller against
+              PID for joint trajectory tracking.</p>
+            <div class="tag-row"><span class="tag">MATLAB</span><span class="tag">Simulink</span><span class="tag">Robot Dynamics</span><span class="tag">Control Theory</span><span class="tag">6-DOF Arm</span></div>
+            <div class="project-links">
+              <a class="btn primary small" href="https://github.com/harishvenky29/ur5-computed-torque-control" target="_blank" rel="noopener">GitHub repo</a>
+            </div>
           </article>
 
           <article class="card activity-card">
+            <button type="button" class="proj-media proj-photo" data-gallery="office" aria-label="Open the Office Mapping &amp; Patrol gallery: exploration result, SLAM timelapse, office world and final map">
+              <img src="images/office-explore-card.jpg" alt="Map built by frontier exploration, with the robot's orange path through the office" width="960" height="480" loading="lazy" />
+              <span class="play-badge"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Timelapse &amp; maps</span>
+            </button>
             <div class="proj-num">04</div>
-            <h3>LLM-Commanded Robot</h3>
-            <p>Natural-language control on top of the Nav2 robot: an LLM turns commands like "go to the kitchen, then come back" into navigation goals using tool calling.</p>
-            <div class="tag-row"><span class="tag">ROS 2</span><span class="tag">LLM</span><span class="tag">Tool Calling</span><span class="tag">Python</span></div>
+            <h3>ROS 2 Office Mapping &amp; Patrol</h3>
+            <p>TurtleBot3 explores an unknown office on its own with a custom frontier-exploration node, builds a
+              LIDAR-only map with SLAM Toolbox, then localises with AMCL and runs a Nav2 patrol between rooms.</p>
+            <p class="proj-result"><strong>99.2%</strong> of reachable floor mapped · <strong>12</strong> goals · <strong>38 m</strong> driven</p>
+            <div class="tag-row"><span class="tag">ROS 2</span><span class="tag">SLAM Toolbox</span><span class="tag">Nav2</span><span class="tag">AMCL</span><span class="tag">Frontier Exploration</span><span class="tag">Gazebo</span><span class="tag">Python</span></div>
+            <div class="project-links">
+              <a class="btn primary small" href="https://github.com/harishvenky29/ros2-office-slam-nav2" target="_blank" rel="noopener">GitHub repo</a>
+              <button type="button" class="btn outline small" data-gallery="office">View gallery</button>
+            </div>
           </article>
 
           <article class="card activity-card">
-            <!-- When finished: delete the <span class="proj-status"> below -->
-            <div class="proj-num">05 <span class="proj-status">In progress</span></div>
+            <div class="proj-media">
+              <svg class="proj-art" viewBox="0 0 320 160" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 22 H150 a6 6 0 0 1 6 6 V58 a6 6 0 0 1 -6 6 H54 l-12 12 V64 H22 a6 6 0 0 1 -6 -6 V28 a6 6 0 0 1 6 -6 Z"/>
+                <text x="30" y="47" font-family="Inter, sans-serif" font-size="9" fill="currentColor" stroke="none" font-size="11">"go to the kitchen"</text>
+                <path d="M26 104 v-6 M34 108 v-14 M42 112 v-22 M50 106 v-10 M58 114 v-26 M66 108 v-14 M74 104 v-6 M82 110 v-18 M90 106 v-10 M98 104 v-6" opacity=".7"/>
+                <path d="M162 44 H186" /><path d="M180 39 l6 5 -6 5"/>
+                <rect x="190" y="28" width="116" height="32" rx="5"/>
+                <text x="198" y="48" font-family="Inter, sans-serif" font-size="9" fill="currentColor" stroke="none" font-family="monospace">navigate_to(kitchen)</text>
+                <path d="M248 62 V86" stroke-dasharray="3 3"/><path d="M243 80 l5 6 5 -6"/>
+                <circle cx="248" cy="112" r="12"/><path d="M248 112 L258 106"/>
+                <path d="M262 116 H282" stroke-dasharray="2 4"/>
+                <circle cx="294" cy="100" r="5"/><path d="M294 106 V124 M286 112 H302 M294 124 l-6 12 M294 124 l6 12"/>
+              </svg>
+            </div>
+            <div class="proj-num">05</div>
+            <h3>Voice &amp; LLM-Commanded Robot</h3>
+            <p>Natural-language control on top of the Nav2 robot: spoken or typed commands like "go to the kitchen, then
+              come back" are turned into navigation goals by an LLM using tool calling. The robot can also follow a
+              person or target and avoids obstacles along the way.</p>
+            <div class="tag-row"><span class="tag">ROS 2</span><span class="tag">LLM</span><span class="tag">Tool Calling</span><span class="tag">Speech Recognition</span><span class="tag">Person Following</span><span class="tag">Obstacle Avoidance</span><span class="tag">Python</span></div>
+            <!-- GitHub link: uncomment and add the repo URL when it's ready
+            <div class="project-links">
+              <a class="btn outline small" href="https://github.com/harishvenky29/REPO-NAME" target="_blank" rel="noopener">GitHub repo</a>
+            </div>
+            -->
+          </article>
+
+          <article class="card activity-card">
+            <div class="proj-media">
+              <svg class="proj-art" viewBox="0 0 320 160" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 38 V22 H38 M182 22 H200 V38 M200 122 V138 H182 M38 138 H20 V122"/>
+                <path d="M110 70 V90 M100 80 H120" opacity=".7"/><circle cx="110" cy="80" r="3" opacity=".7"/>
+                <circle cx="146" cy="66" r="15"/>
+                <rect x="126" y="46" width="40" height="40" stroke-dasharray="4 3"/>
+                <path d="M126 46 V34 H186 V46"/><text x="130" y="43" font-family="Inter, sans-serif" font-size="9" fill="currentColor" stroke="none">target 0.94</text>
+                <path d="M113 78 L130 70" stroke-dasharray="2 3"/><text x="72" y="104" font-family="Inter, sans-serif" font-size="9" fill="currentColor" stroke="none">error → steer</text>
+                <path d="M208 80 H232"/><path d="M226 75 l6 5 -6 5"/>
+                <circle cx="268" cy="100" r="14"/><path d="M268 100 L280 94"/>
+                <path d="M250 70 A 32 32 0 0 1 296 76"/><path d="M290 70 l6 6 -8 2"/>
+                <text x="246" y="134" font-family="Inter, sans-serif" font-size="9" fill="currentColor" stroke="none" font-family="monospace">cmd_vel</text>
+              </svg>
+            </div>
+            <div class="proj-num">06</div>
             <h3>Camera Vision to Robot Control</h3>
             <p>A ROS 2 Jazzy system on Ubuntu 24.04, running in Gazebo simulation: a camera-equipped robot processes its
               live feed with OpenCV, and what it detects drives the robot's movement, steering it towards the target.</p>
             <div class="tag-row"><span class="tag">ROS 2</span><span class="tag">Gazebo</span><span class="tag">OpenCV</span><span class="tag">Python</span><span class="tag">Computer Vision</span></div>
           </article>
 
-          <!-- Add more projects here as new <article class="card activity-card"> blocks (06, 07...) -->
+          <!-- Add more projects here as new <article class="card activity-card"> blocks (07, 08...) -->
 
         </div>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section class="section alt" id="skills">
+    <section class="section" id="skills">
       <div class="container">
         <div class="section-header">
+          <p class="eyebrow">05 · Skills</p>
           <h2>Skills &amp; Technologies</h2>
           <p class="section-subtitle">Tools, languages, and frameworks I work with regularly.</p>
         </div>
@@ -422,6 +462,7 @@
               <li>Nav2 · SLAM Toolbox</li>
               <li>Gazebo · RViz · URDF / xacro</li>
               <li>SLAM &amp; Autonomous Navigation</li>
+              <li>Manipulator Dynamics &amp; Control (Computed Torque, PID)</li>
               <li>Sensor Fusion (LiDAR, IMU, Camera)</li>
               <li>Computer Vision · OpenCV</li>
               <li>Reinforcement Learning</li>
@@ -432,7 +473,7 @@
             <h3>Software Engineering</h3>
             <ul>
               <li>Java (Oracle Certified) · Python · C++ · C</li>
-              <li>Spring Boot · FastAPI</li>
+              <li>Spring Boot</li>
               <li>REST APIs · Microservices</li>
               <li>SQL &amp; Database Systems</li>
               <li>Docker · AWS · CI/CD</li>
@@ -467,7 +508,6 @@
               <li>PyTorch · TensorFlow</li>
               <li>Deep Learning (CNN, Transformers)</li>
               <li>Object Detection (YOLOv5) · CVAT</li>
-              <li>HuggingFace Ecosystem · OpenCV</li>
               <li>LLM Integration (Tool Calling)</li>
               <li>Scikit-learn</li>
               <li>Data Analysis (Google Data Analytics)</li>
@@ -478,19 +518,70 @@
       </div>
     </section>
 
+    <!-- CERTIFICATIONS -->
+    <section class="section alt" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">06 · Certifications</p>
+          <h2>Certifications</h2>
+          <p class="section-subtitle">Credentials in programming, data and AI, with links to verify where available.</p>
+        </div>
+        <div class="grid cert-grid">
+
+          <article class="card cert-card cert-featured">
+            <p class="cert-issuer">Oracle University · Feb 2022</p>
+            <h3>Oracle Certified Associate, Java SE 8 Programmer</h3>
+          </article>
+
+          <article class="card cert-card">
+            <p class="cert-issuer">Google · Coursera · Sep 2021</p>
+            <h3>Prepare Data for Exploration</h3>
+            <a class="cert-link" href="https://coursera.org/verify/SWQWRDZ6J4PG" target="_blank" rel="noopener">Verify credential</a>
+          </article>
+
+          <article class="card cert-card">
+            <p class="cert-issuer">Google · Coursera · Aug 2021</p>
+            <h3>Ask Questions to Make Data-Driven Decisions</h3>
+            <a class="cert-link" href="https://coursera.org/verify/PX5DNCV2L37W" target="_blank" rel="noopener">Verify credential</a>
+          </article>
+
+          <article class="card cert-card">
+            <p class="cert-issuer">Google · Coursera · Aug 2021</p>
+            <h3>Foundations: Data, Data, Everywhere</h3>
+            <a class="cert-link" href="https://coursera.org/verify/7W42XNZTW6PU" target="_blank" rel="noopener">Verify credential</a>
+          </article>
+
+          <article class="card cert-card">
+            <p class="cert-issuer">SkillUp by Simplilearn · Jul 2021</p>
+            <h3>Machine Learning</h3>
+          </article>
+
+          <article class="card cert-card">
+            <p class="cert-issuer">Udemy · May 2020 · 16.5 hours</p>
+            <h3>Artificial Intelligence A–Z: Learn How To Build An AI</h3>
+            <a class="cert-link" href="https://ude.my/UC-f3851d26-d5dd-48bc-b643-a84cd81b9af0" target="_blank" rel="noopener">Verify credential</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section class="section join-section" id="contact">
       <div class="container join-inner">
         <div class="join-text">
-          <h2>Let's Connect</h2>
-          <p>I'm open to robotics and engineering roles, research collaborations, and interesting
-            conversations about robotics and AI.</p>
+          <p class="eyebrow">07 · Contact</p>
+          <h2 class="join-title">Let's build something <span class="accent-name">that moves.</span></h2>
+          <p>I'm looking for my next role in robotics, computer vision or software engineering, and I'm always
+            happy to talk ROS 2, perception, or anything that drives itself. The quickest way to reach me is email.</p>
+          <a class="join-email" href="mailto:mrharishv29@gmail.com">mrharishv29@gmail.com</a>
           <ul class="join-list">
-            <li>Robotics &amp; AI engineering roles</li>
-            <li>Engineering roles</li>
-            <li>Research collaborations</li>
-            <li>Open source projects</li>
+            <li>Robotics &amp; ROS 2 engineering roles</li>
+            <li>Computer vision &amp; ML roles</li>
+            <li>Software engineering roles</li>
+            <li>Research collaborations &amp; open source</li>
           </ul>
+          <p class="join-location"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.4-6-11a6 6 0 0 1 12 0c0 5.6-6 11-6 11Z"/><circle cx="12" cy="10" r="2.2"/></svg>Based in York · open to relocating anywhere in the UK</p>
         </div>
         <div class="join-actions">
           <a href="https://github.com/harishvenky29" target="_blank" rel="noopener" class="btn primary full-width">View GitHub</a>
@@ -504,300 +595,91 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> Harish Venkatesan. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Harish Venkatesan · Robotics &amp; Software Engineer · York, UK</p>
+      <div class="footer-social">
+        <a href="https://github.com/harishvenky29" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></a>
+        <a href="https://www.linkedin.com/in/harish-venkatesan-m-r-833173191/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a>
+        <a href="mailto:mrharishv29@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></a>
+      </div>
       <a href="#top" class="back-to-top">Back to top ↑</a>
     </div>
   </footer>
 
-  <!-- ── AI Chat Widget ── -->
-  <style>
-    .chat-toggle {
-      position: fixed;
-      bottom: 28px;
-      right: 28px;
-      width: 54px;
-      height: 54px;
-      border-radius: 50%;
-      background: var(--accent);
-      border: none;
-      cursor: pointer;
-      box-shadow: 0 4px 24px rgba(199, 115, 19, 0.45);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 999;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .chat-toggle:hover {
-      transform: scale(1.08);
-      box-shadow: 0 6px 30px rgba(199, 115, 19, 0.55);
-    }
-
-    .chat-toggle svg {
-      width: 24px;
-      height: 24px;
-      fill: #0c0c0e;
-    }
-
-    .chat-toggle .icon-close {
-      display: none;
-    }
-
-    .chat-window {
-      position: fixed;
-      bottom: 94px;
-      right: 28px;
-      width: 360px;
-      max-height: min(520px, calc(100vh - 120px));
-      background: #0c0e14;
-      border: 1px solid rgba(199, 115, 19, 0.25);
-      border-radius: 1.25rem;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
-      z-index: 998;
-      opacity: 0;
-      pointer-events: none;
-      transform: translateY(12px);
-      transition: opacity 0.22s ease, transform 0.22s ease;
-      overflow: hidden;
-    }
-
-    .chat-window.open {
-      opacity: 1;
-      pointer-events: auto;
-      transform: translateY(0);
-    }
-
-    .chat-header {
-      padding: 14px 18px;
-      background: rgba(199, 115, 19, 0.1);
-      border-bottom: 1px solid rgba(199, 115, 19, 0.15);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .chat-header-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 6px var(--accent);
-      animation: blink 2s ease-in-out infinite;
-    }
-
-    @keyframes blink {
-
-      0%,
-      100% {
-        opacity: 1;
-      }
-
-      50% {
-        opacity: 0.3;
-      }
-    }
-
-    .chat-header-title {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: #f0ede8;
-    }
-
-    .chat-header-sub {
-      font-size: 0.7rem;
-      color: #6a6560;
-      margin-left: auto;
-    }
-
-    .chat-messages {
-      flex: 1;
-      overflow-y: auto;
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      scrollbar-width: thin;
-      scrollbar-color: rgba(199, 115, 19, 0.2) transparent;
-    }
-
-    .chat-messages::-webkit-scrollbar {
-      width: 4px;
-    }
-
-    .chat-messages::-webkit-scrollbar-thumb {
-      background: rgba(199, 115, 19, 0.2);
-      border-radius: 4px;
-    }
-
-    .msg {
-      max-width: 85%;
-      padding: 10px 14px;
-      border-radius: 1rem;
-      font-size: 0.84rem;
-      line-height: 1.55;
-      font-family: "Inter", sans-serif;
-    }
-
-    .msg.bot {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      color: #d4cfc8;
-      border-radius: 1rem 1rem 1rem 0.2rem;
-      align-self: flex-start;
-    }
-
-    .msg.user {
-      background: var(--accent);
-      color: #0c0c0e;
-      font-weight: 500;
-      border-radius: 1rem 1rem 0.2rem 1rem;
-      align-self: flex-end;
-    }
-
-    .msg.typing {
-      display: flex;
-      gap: 5px;
-      align-items: center;
-      padding: 12px 16px;
-    }
-
-    .msg.typing span {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #6a6560;
-      animation: bounce 1.2s infinite;
-    }
-
-    .msg.typing span:nth-child(2) {
-      animation-delay: 0.2s;
-    }
-
-    .msg.typing span:nth-child(3) {
-      animation-delay: 0.4s;
-    }
-
-    @keyframes bounce {
-
-      0%,
-      60%,
-      100% {
-        transform: translateY(0);
-      }
-
-      30% {
-        transform: translateY(-5px);
-      }
-    }
-
-    .chat-input-row {
-      display: flex;
-      gap: 8px;
-      padding: 12px;
-      border-top: 1px solid rgba(255, 255, 255, 0.06);
-    }
-
-    .chat-input {
-      flex: 1;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 999px;
-      padding: 9px 14px;
-      color: #e5e7eb;
-      font-size: 0.83rem;
-      font-family: "Inter", sans-serif;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-
-    .chat-input:focus {
-      border-color: rgba(199, 115, 19, 0.4);
-    }
-
-    .chat-input::placeholder {
-      color: #3a3530;
-    }
-
-    .chat-send {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: var(--accent);
-      border: none;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      transition: background 0.2s;
-    }
-
-    .chat-send:hover {
-      background: #e08828;
-    }
-
-    .chat-send svg {
-      width: 15px;
-      height: 15px;
-      fill: #0c0c0e;
-    }
-
-    @media(max-width:420px) {
-      .chat-window {
-        width: calc(100vw - 32px);
-        right: 16px;
-        bottom: 88px;
-      }
-
-      .chat-toggle {
-        right: 16px;
-        bottom: 16px;
-      }
-    }
-  </style>
-
-  <button class="chat-toggle" id="chatToggle" aria-label="Open chat">
-    <svg class="icon-chat" viewBox="0 0 24 24">
-      <path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0 14H6l-2 2V4h16v12z" />
-    </svg>
-    <svg class="icon-close" viewBox="0 0 24 24">
-      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
-    </svg>
-  </button>
-
-  <div class="chat-window" id="chatWindow">
-    <div class="chat-header">
-      <div class="chat-header-dot"></div>
-      <div class="chat-header-title">Ask about Harish</div>
-      <div class="chat-header-sub">AI Assistant</div>
-    </div>
-    <div class="chat-messages" id="chatMessages">
-      <div class="msg bot">Hi! I'm Harish's portfolio assistant. Ask me anything about his background, experience, or
-        projects 👋</div>
-    </div>
-    <div class="chat-input-row">
-      <input class="chat-input" id="chatInput" type="text" placeholder="Ask a question..." autocomplete="off" />
-      <button class="chat-send" id="chatSend">
-        <svg viewBox="0 0 24 24">
-          <path d="M2 21l21-9L2 3v7l15 2-15 2z" />
-        </svg>
-      </button>
+  <!-- ── Project gallery lightbox ── -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project gallery" hidden>
+    <div class="lightbox-box">
+      <div class="lightbox-top">
+        <span class="lightbox-count" id="lbCount"></span>
+        <button type="button" class="modal-close" id="lbClose" aria-label="Close gallery">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
+        </button>
+      </div>
+      <div class="lightbox-stage" id="lbStage"></div>
+      <div class="lightbox-bottom">
+        <button type="button" class="lightbox-nav" id="lbPrev" aria-label="Previous">&#8592;</button>
+        <p class="lightbox-caption" id="lbCaption"></p>
+        <button type="button" class="lightbox-nav" id="lbNext" aria-label="Next">&#8594;</button>
+      </div>
     </div>
   </div>
 
   <script src="script.js"></script>
   <script>
+    // ── Scroll reveal + active nav link ──
+    (function () {
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Project videos: play only while on screen, and never auto-play for reduced-motion visitors
+      document.querySelectorAll('.proj-media video').forEach(v => {
+        if (reduce) { v.removeAttribute('autoplay'); v.pause(); v.controls = true; return; }
+        if ('IntersectionObserver' in window) {
+          new IntersectionObserver(([e]) => { e.isIntersecting ? v.play().catch(() => {}) : v.pause(); }).observe(v);
+        }
+      });
+
+      if (!reduce && 'IntersectionObserver' in window) {
+        const items = document.querySelectorAll('.section-header, .card, .stat-item, .join-text, .join-actions');
+        document.documentElement.classList.add('js-reveal');
+        items.forEach(el => {
+          el.classList.add('reveal');
+          const sibs = Array.from(el.parentElement.children).filter(c => c.matches('.card, .stat-item'));
+          const i = sibs.indexOf(el);
+          if (i > 0) el.style.transitionDelay = Math.min(i, 5) * 70 + 'ms';
+        });
+        const io = new IntersectionObserver(entries => {
+          entries.forEach(e => {
+            if (!e.isIntersecting) return;
+            const el = e.target;
+            el.classList.add('in');
+            io.unobserve(el);
+            // hand the element back to its normal hover transitions once it has arrived
+            setTimeout(() => { el.classList.remove('reveal', 'in'); el.style.transitionDelay = ''; }, 1100);
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        items.forEach(el => io.observe(el));
+      }
+
+      const links = Array.from(document.querySelectorAll('.nav a[href^="#"]'));
+      const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+      function setActive() {
+        const y = window.scrollY + window.innerHeight * 0.35;
+        let current = null;
+        sections.forEach(sec => { if (sec.offsetTop <= y) current = sec; });
+        links.forEach(a => a.classList.toggle('active', current && a.getAttribute('href') === '#' + current.id));
+      }
+      window.addEventListener('scroll', setActive, { passive: true });
+      setActive();
+    })();
+  </script>
+  <script>
     // Typewriter effect
     (function () {
       const roles = [
         "Robotics Engineer",
+        "ROS 2 Developer",
+        "Computer Vision Engineer",
         "Software Engineer",
-        "AI & ML Enthusiast",
-        "Java Developer",
-        "Problem Solver"
+        "AI & ML Engineer"
       ];
 
       const el = document.getElementById('typewriter');
@@ -840,119 +722,13 @@
     })();
   </script>
   <script>
-    (function () {
-      const SYSTEM_PROMPT = `You are a helpful portfolio assistant for Harish Venkatesan. Answer questions about him concisely and professionally based only on this information:
-
-NAME: Harish Venkatesan M R
-
-EDUCATION:
-- MSc Intelligent Robotics, University of York, UK — full-time, Sep 2023 to Sep 2024; graduated Jan 2025
-- B.E. Computer Science and Engineering, KPR Institute of Engineering and Technology, Coimbatore (Anna University) — Aug 2018 to May 2022, CGPA 7.51, First Class
-
-EXPERIENCE:
-- Associate Engineer – Technology at Virtusa Consulting Services Pvt Ltd, Chennai — May 2022 to Sep 2023 (about 15 months). Enterprise software, REST APIs, Spring Boot backends, CI/CD, AWS.
-- Intern – Delivery at Virtusa Consulting Services Pvt Ltd — Jan 2022 to Mar 2022. Backend tasks, testing, code reviews, Java, Spring Boot.
-- Grand Finalist, Virtusa NeuralHack Season 5 (Sep–Oct 2021): selected in the top 250 out of 100,000+ (1 lakh+) participants, which led to a pre-placement offer.
-- Member of SP Robotics for 6 months (Mar–Aug 2018), teaching robotics alongside the group's senior staff.
-
-CERTIFICATIONS:
-Oracle Certified Associate, Java SE 8 Programmer (Feb 2022); Google/Coursera: Prepare Data for Exploration (Sep 2021), Ask Questions to Make Data-Driven Decisions (Aug 2021) and Foundations: Data, Data, Everywhere (Aug 2021); Machine Learning, SkillUp by Simplilearn (Jul 2021); HackerRank Problem Solving (Basic) (Feb 2021); Udemy Artificial Intelligence A-Z (May 2020); National Level Quiz on Python Programming, Sigma Institute of Engineering (participation).
-
-SKILLS:
-Robotics & AI: ROS 2 (Jazzy), rclpy, Nav2, SLAM Toolbox, Gazebo, RViz, URDF/xacro, SLAM, Sensor Fusion (LiDAR, IMU, Camera), Computer Vision, OpenCV, Reinforcement Learning
-Software: Java, Python, C++, C, SQL, Spring Boot, FastAPI, REST APIs, Docker, AWS, CI/CD, Git
-ML & Data: PyTorch, TensorFlow, YOLOv5, HuggingFace, OpenCV, Scikit-learn, LLM integration (tool calling), data analysis
-CAD & Simulation: Autodesk Inventor, Autodesk Fusion 360, MATLAB/Simulink, Gazebo
-
-PROJECTS:
-1. Autonomous Rescue Robot — Navigation & Vision System (MSc Intelligent Robotics, University of York, 2024). Autonomous ground robot for search-and-rescue in maze/disaster environments: navigates a maze, detects victims and obstacles, retrieves a target ("Mr. York"). Raspberry Pi central controller coordinating 3 Arduinos over UART with sequential polling; 4 IR sensors via TCA9548A I2C multiplexer plus ultrasonic sensors for 360° obstacle avoidance; Mecanum omnidirectional wheels with encoder feedback; custom YOLOv5 model (classes: Mr. York, Car, Blocks) trained via CVAT annotation, reaching 86% mAP, integrated with motor control for vision-guided victim approach. Tech: Python, C++ (Arduino), YOLOv5, OpenCV, PyTorch, PySerial, Arduino Nano 33 BLE, Raspberry Pi 4, GP2Y0E02B IR and HC-SR04 ultrasonic sensors. Demo video: https://www.youtube.com/watch?v=4F5axwGFdGk
-   Harish was team lead of a 4-person team on this project (integrated aerial and ground system); he also built the serial link to a custom two-jaw gripper so the robot could grasp the rescue object and return it to the start without operator input.
-2. Autonomous Waypoint Navigation Robot. Wheeled mobile robot that navigates autonomously between two defined waypoints and returns to its origin without operator input. Sensor fusion of IR and ultrasonic range data to improve detection reliability (compensating for IR sensitivity to surface reflectivity and ultrasonic errors on angled or soft surfaces). Reactive collision avoidance: detects obstacles, manoeuvres around them and resumes its route.
-3. ROS 2 Autonomous Navigation — TurtleBot3 in Gazebo, SLAM Toolbox mapping, Nav2 navigation, custom Python waypoint-patrol node.
-4. LLM-Commanded Robot — natural-language commands turned into Nav2 goals via LLM tool calling.
-5. Camera Vision to Robot Control — built with ROS 2 Jazzy on Ubuntu 24.04, running in Gazebo simulation. A camera feed is processed with OpenCV, and what it detects drives the robot's movement. Tech: ROS 2, Gazebo, OpenCV, Python, computer vision. Still in progress, no final results yet.
-
-CONTACT:
-Email: mrharishv29@gmail.com · LinkedIn: https://www.linkedin.com/in/harish-venkatesan-m-r-833173191/ · GitHub: https://github.com/harishvenky29
-
-Keep answers short (2-4 sentences). Be friendly and professional. If asked something not covered, say you don't have that information but suggest contacting Harish directly.`;
-
-      const toggle = document.getElementById('chatToggle');
-      const win = document.getElementById('chatWindow');
-      const msgs = document.getElementById('chatMessages');
-      const input = document.getElementById('chatInput');
-      const sendBtn = document.getElementById('chatSend');
-      const iconChat = toggle.querySelector('.icon-chat');
-      const iconClose = toggle.querySelector('.icon-close');
-      let isOpen = false;
-      let history = [];
-
-      toggle.addEventListener('click', () => {
-        isOpen = !isOpen;
-        win.classList.toggle('open', isOpen);
-        iconChat.style.display = isOpen ? 'none' : 'block';
-        iconClose.style.display = isOpen ? 'block' : 'none';
-        if (isOpen) input.focus();
-      });
-
-      function addMsg(text, role) {
-        const div = document.createElement('div');
-        div.className = 'msg ' + role;
-        div.textContent = text;
-        msgs.appendChild(div);
-        msgs.scrollTop = msgs.scrollHeight;
-        return div;
-      }
-
-      function addTyping() {
-        const div = document.createElement('div');
-        div.className = 'msg bot typing';
-        div.innerHTML = '<span></span><span></span><span></span>';
-        msgs.appendChild(div);
-        msgs.scrollTop = msgs.scrollHeight;
-        return div;
-      }
-
-      async function sendMessage() {
-        const text = input.value.trim();
-        if (!text) return;
-        input.value = '';
-        addMsg(text, 'user');
-        history.push({ role: 'user', content: text });
-        const typing = addTyping();
-        try {
-          const res = await fetch('https://api.anthropic.com/v1/messages', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              model: 'claude-sonnet-4-20250514',
-              max_tokens: 1000,
-              system: SYSTEM_PROMPT,
-              messages: history
-            })
-          });
-          if (!res.ok) throw new Error('Chat request failed: ' + res.status);
-          const data = await res.json();
-          const reply = data.content?.[0]?.text || "Sorry, I couldn't get a response.";
-          history.push({ role: 'assistant', content: reply });
-          typing.remove();
-          addMsg(reply, 'bot');
-        } catch (e) {
-          typing.remove();
-          addMsg("The assistant isn't available right now. Please use the Contact section to reach Harish directly.", 'bot');
-        }
-      }
-
-      sendBtn.addEventListener('click', sendMessage);
-      input.addEventListener('keydown', e => { if (e.key === 'Enter') sendMessage(); });
-    })();
-  </script>
-  <script>
     // ── Animated Background ──
     // Drifting node network on a faint grid, with:
     //  • "signal" pulses that travel along links between nodes
     //  • a slow sensor-style scan band sweeping down the screen
     //  • cursor "sensing": nearby nodes link to the pointer and glow
+    //  • an orange line-art 6-DOF arm running a pick-and-place loop (bottom right)
+    //  • a small mobile robot following a planned path with a sweeping LiDAR (bottom left)
     (function () {
       const canvas = document.getElementById('bgCanvas');
       const ctx = canvas.getContext('2d');
@@ -986,7 +762,7 @@ Keep answers short (2-4 sentences). Be friendly and professional. If asked somet
         this.vy = Math.sin(angle) * speed;
         this.phase = Math.random() * Math.PI * 2;
         this.isOrange = Math.random() < 0.2;
-        this.glow = 0; // lights up when a pulse arrives or the cursor is near
+        this.glow = 0; // lights up when a pulse arrives, the cursor is near, or the LiDAR hits it
       }
       Particle.prototype.update = function () {
         this.x += this.vx;
@@ -1141,37 +917,300 @@ Keep answers short (2-4 sentences). Be friendly and professional. If asked somet
         ctx.fillRect(0, 0, W, H);
       }
 
+      // ═════════ 6-DOF arm: pick-and-place loop ═════════
+      // Side view of an industrial arm. Joints: J1 base yaw (turntable), J2 shoulder,
+      // J3 elbow, J4–J6 wrist. Shoulder/elbow come from 2-link inverse kinematics so
+      // the tool stays pointing straight down, like a real pick-and-place cell.
+      const ARM_LINE = 0.34;      // outline opacity
+      const ARM_CYCLE = 640;      // frames for one pick → place move
+      let arm = null;
+
+      function setupArm() {
+        const small = W < 768;
+        const S = small ? Math.min(H * 0.34, W * 0.55, 230) : Math.min(H * 0.55, W * 0.32, 400);
+        const groundY = H - S * 0.04;
+        const pedestal = S * 0.28;
+        const bx = W - S * (small ? 0.22 : 0.3);
+        arm = {
+          S, groundY, bx, by: groundY - pedestal,          // shoulder pivot
+          L1: S * 0.44, L2: S * 0.40,                       // upper arm, forearm
+          L3: S * 0.08, L4: S * 0.06, F: S * 0.09,          // wrist links, finger length
+          box: S * 0.11,
+          pickX: bx - S * 0.68, placeX: bx - S * 0.36,
+          boxAt: 0,                                          // 0 = resting at pick spot, 1 = at place spot
+          cycle: 0
+        };
+      }
+
+      const ease = x => x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+      const lerp = (a, b, k) => a + (b - a) * k;
+
+      // Tool-tip target over time: home → above A → down → grip → up → above B → down → release → up → home
+      function armTarget(phase, fromX, toX) {
+        const A = arm, toolLen = A.L3 + A.L4 + A.F * 0.8;
+        const gripY = A.groundY - A.box * 0.55;            // fingers around the box centre
+        const hoverY = gripY - A.S * 0.22;
+        const home = { x: A.bx - A.S * 0.42, y: A.by - A.S * 0.28 };
+        const keys = [
+          [0.00, home.x, home.y, 1],
+          [0.16, fromX, hoverY, 1],
+          [0.26, fromX, gripY, 1],
+          [0.32, fromX, gripY, 0],     // close gripper
+          [0.42, fromX, hoverY, 0],
+          [0.60, toX, hoverY, 0],
+          [0.70, toX, gripY, 0],
+          [0.76, toX, gripY, 1],       // open gripper
+          [0.86, toX, hoverY, 1],
+          [1.00, home.x, home.y, 1]
+        ];
+        let i = 0;
+        while (i < keys.length - 2 && phase > keys[i + 1][0]) i++;
+        const [p0, x0, y0, g0] = keys[i], [p1, x1, y1, g1] = keys[i + 1];
+        const k = ease(Math.min(1, Math.max(0, (phase - p0) / (p1 - p0))));
+        return { x: lerp(x0, x1, k), y: lerp(y0, y1, k), open: lerp(g0, g1, k), toolLen,
+                 holding: phase > 0.32 && phase < 0.76 };
+      }
+
+      function solveIK(tx, ty) {
+        // Wrist centre (J4) target sits above the tool tip because the tool points down
+        const A = arm;
+        let dx = tx - A.bx, dy = ty - A.by;
+        let d = Math.hypot(dx, dy);
+        const maxR = A.L1 + A.L2 - 1, minR = Math.abs(A.L1 - A.L2) + 1;
+        if (d > maxR) { dx *= maxR / d; dy *= maxR / d; d = maxR; }
+        if (d < minR) { dx *= minR / d; dy *= minR / d; d = minR; }
+        const cosE = (d * d - A.L1 * A.L1 - A.L2 * A.L2) / (2 * A.L1 * A.L2);
+        const elbow = Math.acos(Math.max(-1, Math.min(1, cosE)));
+        // elbow-up solution for an arm reaching to the left
+        const shoulder = Math.atan2(dy, dx) + Math.atan2(A.L2 * Math.sin(elbow), A.L1 + A.L2 * Math.cos(elbow));
+        return { shoulder, elbow: -elbow };
+      }
+
+      function strokeLink(x1, y1, x2, y2, w) {
+        // capsule outline between two joints
+        const ang = Math.atan2(y2 - y1, x2 - x1), nx = Math.sin(ang) * w, ny = -Math.cos(ang) * w;
+        ctx.beginPath();
+        ctx.moveTo(x1 + nx, y1 + ny);
+        ctx.lineTo(x2 + nx, y2 + ny);
+        ctx.arc(x2, y2, w, ang - Math.PI / 2, ang + Math.PI / 2);
+        ctx.lineTo(x1 - nx, y1 - ny);
+        ctx.arc(x1, y1, w, ang + Math.PI / 2, ang + Math.PI * 1.5);
+        ctx.closePath();
+        ctx.stroke();
+      }
+
+      function joint(x, y, r, label) {
+        ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.stroke();
+        ctx.beginPath(); ctx.arc(x, y, r * 0.35, 0, Math.PI * 2);
+        ctx.fillStyle = ORANGE + (ARM_LINE + 0.15) + ')'; ctx.fill();
+        if (label && W >= 768) {
+          ctx.fillStyle = ORANGE + '0.35)';
+          ctx.fillText(label, x + r + 4, y - r - 2);
+        }
+      }
+
+      function drawArm(advance) {
+        const A = arm;
+        if (advance) A.cycle++;
+        if (A.cycle >= ARM_CYCLE) { A.cycle = 0; A.boxAt = 1 - A.boxAt; }
+        const phase = A.cycle / ARM_CYCLE;
+        const fromX = A.boxAt === 0 ? A.pickX : A.placeX;
+        const toX = A.boxAt === 0 ? A.placeX : A.pickX;
+        const T = armTarget(phase, fromX, toX);
+        const wristY = T.y - T.toolLen;
+        const { shoulder, elbow } = solveIK(T.x, wristY);
+
+        const p1 = { x: A.bx + A.L1 * Math.cos(shoulder), y: A.by + A.L1 * Math.sin(shoulder) };
+        const a2 = shoulder + elbow;
+        const p2 = { x: p1.x + A.L2 * Math.cos(a2), y: p1.y + A.L2 * Math.sin(a2) };   // J4
+        const p3 = { x: p2.x, y: p2.y + A.L3 };                                        // J5
+        const p4 = { x: p3.x, y: p3.y + A.L4 };                                        // J6 / flange
+
+        ctx.save();
+        ctx.lineJoin = 'round';
+        ctx.lineCap = 'round';
+        ctx.font = '600 9px Inter, sans-serif';
+        ctx.strokeStyle = ORANGE + ARM_LINE + ')';
+        ctx.lineWidth = 1.3;
+
+        // Work surface + target markers
+        ctx.setLineDash([4, 6]);
+        ctx.beginPath(); ctx.moveTo(A.pickX - A.S * 0.25, A.groundY); ctx.lineTo(W, A.groundY); ctx.stroke();
+        ctx.setLineDash([]);
+        [A.pickX, A.placeX].forEach(x => {
+          ctx.beginPath();
+          ctx.moveTo(x - A.box * 0.8, A.groundY + 4); ctx.lineTo(x - A.box * 0.8, A.groundY);
+          ctx.moveTo(x + A.box * 0.8, A.groundY + 4); ctx.lineTo(x + A.box * 0.8, A.groundY);
+          ctx.stroke();
+        });
+
+        // Pedestal + J1 turntable (the ellipse marker spins slowly to show base yaw)
+        const pw = A.S * 0.12;
+        ctx.beginPath();
+        ctx.moveTo(A.bx - pw * 1.4, A.groundY); ctx.lineTo(A.bx - pw, A.by + A.S * 0.06);
+        ctx.lineTo(A.bx + pw, A.by + A.S * 0.06); ctx.lineTo(A.bx + pw * 1.4, A.groundY);
+        ctx.stroke();
+        ctx.beginPath(); ctx.ellipse(A.bx, A.by + A.S * 0.06, pw * 1.05, pw * 0.3, 0, 0, Math.PI * 2); ctx.stroke();
+        const yaw = Math.sin(phase * Math.PI * 2) * 0.9;
+        ctx.beginPath();
+        ctx.arc(A.bx + Math.sin(yaw) * pw, A.by + A.S * 0.06 + Math.cos(yaw) * pw * 0.3, 2, 0, Math.PI * 2);
+        ctx.fillStyle = ORANGE + '0.6)'; ctx.fill();
+
+        // Links
+        strokeLink(A.bx, A.by, p1.x, p1.y, A.S * 0.045);
+        strokeLink(p1.x, p1.y, p2.x, p2.y, A.S * 0.035);
+        strokeLink(p2.x, p2.y, p3.x, p3.y, A.S * 0.022);
+        strokeLink(p3.x, p3.y, p4.x, p4.y, A.S * 0.018);
+
+        // Joints J2–J6
+        joint(A.bx, A.by, A.S * 0.06, 'J2');
+        joint(p1.x, p1.y, A.S * 0.048, 'J3');
+        joint(p2.x, p2.y, A.S * 0.035, 'J4');
+        joint(p3.x, p3.y, A.S * 0.026, 'J5');
+        joint(p4.x, p4.y, A.S * 0.02, 'J6');
+        if (W >= 768) { ctx.fillStyle = ORANGE + '0.35)'; ctx.fillText('J1', A.bx + pw * 1.2, A.by + A.S * 0.1); }
+
+        // Two-jaw gripper
+        const gap = A.box * (0.55 + 0.35 * T.open);
+        const fy = p4.y + A.F;
+        ctx.beginPath();
+        ctx.moveTo(p4.x - gap, p4.y); ctx.lineTo(p4.x + gap, p4.y);
+        ctx.moveTo(p4.x - gap, p4.y); ctx.lineTo(p4.x - gap, fy);
+        ctx.moveTo(p4.x + gap, p4.y); ctx.lineTo(p4.x + gap, fy);
+        ctx.stroke();
+
+        // Payload: rides in the gripper while held, otherwise rests on its spot
+        const b = A.box;
+        let cx, cy;
+        if (T.holding) { cx = p4.x; cy = p4.y + A.F * 0.8; }           // centred between the fingers
+        else { cx = phase < 0.32 ? fromX : toX; cy = A.groundY - b / 2; }
+        ctx.strokeStyle = ORANGE + (ARM_LINE + 0.1) + ')';
+        ctx.strokeRect(cx - b / 2, cy - b / 2, b, b);
+        ctx.beginPath(); ctx.moveTo(cx - b / 2, cy - b / 2); ctx.lineTo(cx + b / 2, cy + b / 2); ctx.stroke();
+
+        ctx.restore();
+      }
+
+      // ═════════ Mobile robot: path following + LiDAR ═════════
+      let rover = null;
+      function setupRover() {
+        const small = W < 768;
+        rover = {
+          cx: small ? W * 0.32 : W * 0.17,
+          cy: small ? H * 0.62 : H * 0.84,
+          ax: small ? W * 0.22 : Math.min(W * 0.13, 210),
+          ay: small ? H * 0.1 : Math.min(H * 0.1, 90),
+          r: small ? 11 : 15,
+          s: 0,
+          trail: []
+        };
+      }
+      // Figure-of-eight route, like a patrol loop sent to Nav2
+      function roverPath(s) {
+        return { x: rover.cx + rover.ax * Math.sin(s), y: rover.cy + rover.ay * Math.sin(s) * Math.cos(s) };
+      }
+
+      function drawRover(advance) {
+        const R = rover;
+        if (advance) R.s += 0.0045;
+        const p = roverPath(R.s), q = roverPath(R.s + 0.01);
+        const heading = Math.atan2(q.y - p.y, q.x - p.x);
+
+        ctx.save();
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+
+        // Planned global path (dashed) and the driven trail
+        ctx.setLineDash([3, 7]);
+        ctx.strokeStyle = ORANGE + '0.16)';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        for (let k = 0; k <= 120; k++) {
+          const pt = roverPath(k / 120 * Math.PI * 2);
+          k ? ctx.lineTo(pt.x, pt.y) : ctx.moveTo(pt.x, pt.y);
+        }
+        ctx.stroke();
+        ctx.setLineDash([]);
+        if (advance && t % 4 === 0) { R.trail.push({ x: p.x, y: p.y }); if (R.trail.length > 45) R.trail.shift(); }
+        R.trail.forEach((pt, i) => {
+          ctx.beginPath(); ctx.arc(pt.x, pt.y, 1.3, 0, Math.PI * 2);
+          ctx.fillStyle = ORANGE + (i / R.trail.length * 0.45) + ')'; ctx.fill();
+        });
+
+        // LiDAR: a rotating beam plus short hits on nearby nodes
+        const range = R.r * 7;
+        const beam = t * 0.06;
+        const fan = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, range);
+        fan.addColorStop(0, ORANGE + '0.16)');
+        fan.addColorStop(1, ORANGE + '0)');
+        ctx.fillStyle = fan;
+        ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.arc(p.x, p.y, range, beam - 0.5, beam); ctx.closePath(); ctx.fill();
+        ctx.strokeStyle = ORANGE + '0.08)';
+        ctx.beginPath(); ctx.arc(p.x, p.y, range, 0, Math.PI * 2); ctx.stroke();
+        particles.forEach(n => {
+          const d = Math.hypot(n.x - p.x, n.y - p.y);
+          if (d < range) {
+            n.glow = Math.max(n.glow, 0.6);
+            ctx.strokeStyle = ORANGE + ((1 - d / range) * 0.35) + ')';
+            ctx.lineWidth = 0.6;
+            ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(n.x, n.y); ctx.stroke();
+          }
+        });
+
+        // Body (top view): round chassis, two drive wheels, LiDAR turret, heading arrow
+        ctx.translate(p.x, p.y);
+        ctx.rotate(heading);
+        ctx.strokeStyle = ORANGE + '0.55)';
+        ctx.lineWidth = 1.3;
+        ctx.fillStyle = 'rgba(3, 7, 18, 0.85)';
+        ctx.beginPath(); ctx.arc(0, 0, R.r, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+        ctx.strokeRect(-R.r * 0.45, -R.r - 3, R.r * 0.9, 4);
+        ctx.strokeRect(-R.r * 0.45, R.r - 1, R.r * 0.9, 4);
+        ctx.beginPath(); ctx.arc(-R.r * 0.15, 0, R.r * 0.32, 0, Math.PI * 2); ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(R.r * 0.35, -R.r * 0.3); ctx.lineTo(R.r * 0.75, 0); ctx.lineTo(R.r * 0.35, R.r * 0.3);
+        ctx.stroke();
+        ctx.restore();
+      }
+
       function init() {
         resize();
         const count = Math.floor((W * H) / 11000);
         particles = Array.from({ length: Math.max(30, Math.min(count, 120)) }, () => new Particle());
         scanY = H * 0.2;
+        setupArm();
+        setupRover();
       }
 
-      function frame() {
+      function frame(advance) {
         ctx.clearRect(0, 0, W, H);
         drawGlows();
         drawScan();
         drawGrid();
         drawConnections();
         drawPulses();
+        drawRover(advance);
         particles.forEach(p => { p.update(); p.draw(); });
+        drawArm(advance);
       }
 
       function loop() {
         t++;
         scanY += 0.6;
         if (scanY > H + 140) scanY = -20;
-        frame();
+        frame(true);
         requestAnimationFrame(loop);
       }
 
-      window.addEventListener('resize', resize);
+      window.addEventListener('resize', () => {
+        resize(); setupArm(); setupRover();
+        if (reduceMotion) frame(false);
+      });
       window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
       document.addEventListener('mouseleave', () => { mouse.x = mouse.y = -9999; });
 
       init();
-      if (reduceMotion) frame(); // one static frame for people who turn off motion
+      if (reduceMotion) { arm.cycle = Math.floor(ARM_CYCLE * 0.5); rover.s = 0.8; frame(false); } // one still frame
       else loop();
     })();
   </script>
@@ -1389,6 +1428,85 @@ Keep answers short (2-4 sentences). Be friendly and professional. If asked somet
       if (close) close.addEventListener('click', closeModal);
       modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
       document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+    })();
+  </script>
+
+  <!-- Visit counter (GoatCounter: free, no cookies, no consent banner needed).
+       Sign up at goatcounter.com with the code "harishvenky29"; if you pick a different
+       code, change it in the URL below. -->
+  <script data-goatcounter="https://harishvenky29.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+
+  <!-- Visit counter (GoatCounter): no cookies, no personal data stored.
+       Sign up at goatcounter.com with the code "harishvenky29"; if you pick a different code, change it below. -->
+  <script data-goatcounter="https://harishvenky29.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+  <script>
+    // ── Project gallery lightbox ──
+    (function () {
+      const galleries = {
+        office: [
+          { type: 'img', src: 'images/office-explore.png', alt: 'Frontier exploration result map with the robot path',
+            cap: 'Frontier exploration result: 99.2% of reachable floor mapped, 12 goals, 38 m driven.' },
+          { type: 'video', src: 'images/office-slam.mp4', poster: 'images/office-slam.jpg',
+            cap: 'RViz timelapse: SLAM Toolbox building the map while the robot explores (about 8 minutes shown in 30 seconds).' },
+          { type: 'img', src: 'images/office-world.png', alt: 'Floor plan of the simulated office with patrol waypoints',
+            cap: 'The Gazebo office world, with the Nav2 patrol route between rooms.' },
+          { type: 'img', src: 'images/office-slam-map.png', alt: 'Final LIDAR-only occupancy map', pixel: true,
+            cap: 'The finished LIDAR-only map from SLAM Toolbox.' }
+        ]
+      };
+      const lb = document.getElementById('lightbox');
+      const stage = document.getElementById('lbStage');
+      const cap = document.getElementById('lbCaption');
+      const count = document.getElementById('lbCount');
+      let items = [], idx = 0, opener = null;
+
+      function show(i) {
+        idx = (i + items.length) % items.length;
+        const it = items[idx];
+        stage.innerHTML = '';
+        let el;
+        if (it.type === 'video') {
+          el = document.createElement('video');
+          Object.assign(el, { src: it.src, poster: it.poster, controls: true, loop: true, muted: true, playsInline: true });
+          el.autoplay = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        } else {
+          el = document.createElement('img');
+          el.src = it.src; el.alt = it.alt || '';
+          if (it.pixel) el.classList.add('pixel');
+        }
+        stage.appendChild(el);
+        cap.textContent = it.cap;
+        count.textContent = (idx + 1) + ' / ' + items.length;
+      }
+      function open(name, from) {
+        items = galleries[name] || [];
+        if (!items.length) return;
+        opener = from;
+        lb.hidden = false;
+        document.body.style.overflow = 'hidden';
+        show(0);
+        document.getElementById('lbClose').focus();
+      }
+      function close() {
+        lb.hidden = true;
+        stage.innerHTML = '';
+        document.body.style.overflow = '';
+        if (opener) opener.focus();
+      }
+      document.querySelectorAll('[data-gallery]').forEach(btn =>
+        btn.addEventListener('click', () => open(btn.dataset.gallery, btn)));
+      document.getElementById('lbClose').addEventListener('click', close);
+      document.getElementById('lbPrev').addEventListener('click', () => show(idx - 1));
+      document.getElementById('lbNext').addEventListener('click', () => show(idx + 1));
+      lb.addEventListener('click', e => { if (e.target === lb) close(); });
+      document.addEventListener('keydown', e => {
+        if (lb.hidden) return;
+        if (e.key === 'Escape') close();
+        if (e.key === 'ArrowLeft') show(idx - 1);
+        if (e.key === 'ArrowRight') show(idx + 1);
+      });
     })();
   </script>
 
