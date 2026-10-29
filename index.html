@@ -253,7 +253,7 @@
               </div>
               <h3>Grand Finalist — NeuralHack Season 5</h3>
               <p class="timeline-org">Virtusa</p>
-              <p>Selected in the top 250 out of 100,000+ participants in Virtusa's national hiring hackathon, reaching
+              <p>One of 252 grand finalists from 100,000+ participants in Virtusa's national hiring hackathon, reaching
                 the grand finale and earning a pre-placement offer of employment while still in my final year.</p>
             </div>
           </div>
@@ -390,28 +390,21 @@
           </article>
 
           <article class="card activity-card">
-            <div class="proj-media">
-              <svg class="proj-art" viewBox="0 0 320 160" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M22 22 H150 a6 6 0 0 1 6 6 V58 a6 6 0 0 1 -6 6 H54 l-12 12 V64 H22 a6 6 0 0 1 -6 -6 V28 a6 6 0 0 1 6 -6 Z"/>
-                <text x="30" y="47" font-family="Inter, sans-serif" font-size="9" fill="currentColor" stroke="none" font-size="11">"go to the kitchen"</text>
-                <path d="M26 104 v-6 M34 108 v-14 M42 112 v-22 M50 106 v-10 M58 114 v-26 M66 108 v-14 M74 104 v-6 M82 110 v-18 M90 106 v-10 M98 104 v-6" opacity=".7"/>
-                <path d="M162 44 H186" /><path d="M180 39 l6 5 -6 5"/>
-                <rect x="190" y="28" width="116" height="32" rx="5"/>
-                <text x="198" y="48" font-family="Inter, sans-serif" font-size="9" fill="currentColor" stroke="none" font-family="monospace">navigate_to(kitchen)</text>
-                <path d="M248 62 V86" stroke-dasharray="3 3"/><path d="M243 80 l5 6 5 -6"/>
-                <circle cx="248" cy="112" r="12"/><path d="M248 112 L258 106"/>
-                <path d="M262 116 H282" stroke-dasharray="2 4"/>
-                <circle cx="294" cy="100" r="5"/><path d="M294 106 V124 M286 112 H302 M294 124 l-6 12 M294 124 l6 12"/>
-              </svg>
-            </div>
+            <button type="button" class="proj-media proj-photo" data-gallery="llm" aria-label="Open the Voice &amp; LLM-Commanded Robot gallery: demo videos, RViz view, house tour and SLAM map">
+              <img src="images/llm-robot-card.jpg" alt="RViz view of the simulated house with labelled places and the robot's orange route from the hallway to the kitchen" width="960" height="480" loading="lazy" />
+              <span class="play-badge"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Demo videos</span>
+            </button>
             <div class="proj-num">05</div>
             <h3>Voice &amp; LLM-Commanded Robot</h3>
-            <p>Natural-language control on top of the Nav2 robot: spoken or typed commands like "go to the kitchen, then
-              come back" are turned into navigation goals by an LLM using tool calling. The robot can also follow a
-              person or target and avoids obstacles along the way.</p>
-            <div class="tag-row"><span class="tag">ROS 2</span><span class="tag">LLM</span><span class="tag">Tool Calling</span><span class="tag">Speech Recognition</span><span class="tag">Person Following</span><span class="tag">Obstacle Avoidance</span><span class="tag">YOLO</span><span class="tag">Whisper</span><span class="tag">Ollama</span><span class="tag">Python</span></div>
+            <p>A home robot you talk to, in a simulated 7-room house. Typed or spoken commands like "go to the
+              kitchen", "find the blue object" or "I'm thirsty" go to a local LLM, which returns JSON actions that are
+              validated before the robot moves, so the LLM never drives it directly. The camera runs YOLO11 and colour
+              detection to search rooms and remember objects, and a LIDAR person tracker handles "follow me".</p>
+            <p class="proj-result"><strong>7</strong> rooms · <strong>14</strong> named places · <strong>15/17</strong> on the LLM command test</p>
+            <div class="tag-row"><span class="tag">ROS 2</span><span class="tag">Gazebo</span><span class="tag">Nav2</span><span class="tag">LLM</span><span class="tag">Tool Calling</span><span class="tag">Ollama</span><span class="tag">YOLO11</span><span class="tag">Whisper</span><span class="tag">Person Following</span><span class="tag">Python</span></div>
             <div class="project-links">
               <a class="btn primary small" href="https://github.com/harishvenky29/LLM_Robot" target="_blank" rel="noopener">GitHub repo</a>
+              <button type="button" class="btn outline small" data-gallery="llm">View demos</button>
             </div>
           </article>
 
@@ -427,7 +420,7 @@
                 <path d="M208 80 H232"/><path d="M226 75 l6 5 -6 5"/>
                 <circle cx="268" cy="100" r="14"/><path d="M268 100 L280 94"/>
                 <path d="M250 70 A 32 32 0 0 1 296 76"/><path d="M290 70 l6 6 -8 2"/>
-                <text x="246" y="134" font-family="Inter, sans-serif" font-size="9" fill="currentColor" stroke="none" font-family="monospace">cmd_vel</text>
+                <text x="246" y="134" font-family="monospace" font-size="9" fill="currentColor" stroke="none">cmd_vel</text>
               </svg>
             </div>
             <div class="proj-num">06</div>
@@ -1362,7 +1355,7 @@
   </style>
 
   <!-- Modal HTML -->
-  <div class="modal-overlay" id="resumeModal">
+  <div class="modal-overlay" id="resumeModal" role="dialog" aria-modal="true" aria-label="Resume" aria-hidden="true">
     <div class="modal-box">
       <div class="modal-topbar">
         <div class="modal-topbar-title">
@@ -1418,9 +1411,17 @@
       function openModal() {
         if (smallScreen.matches) { window.open('resume.pdf', '_blank', 'noopener'); return; }
         modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
+        close.focus();
       }
-      function closeModal() { modal.classList.remove('open'); document.body.style.overflow = ''; }
+      function closeModal() {
+        if (!modal.classList.contains('open')) return;
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        btn.focus();
+      }
 
       if (btn) btn.addEventListener('click', openModal);
       if (close) close.addEventListener('click', closeModal);
@@ -1429,15 +1430,9 @@
     })();
   </script>
 
-  <!-- Visit counter (GoatCounter: free, no cookies, no consent banner needed).
-       Sign up at goatcounter.com with the code "harishvenky29"; if you pick a different
-       code, change it in the URL below. -->
-  <script data-goatcounter="https://harishvenky29.goatcounter.com/count"
-          async src="//gc.zgo.at/count.js"></script>
-
   <!-- Visit counter (GoatCounter): no cookies, no personal data stored.
        Sign up at goatcounter.com with the code "harishvenky29"; if you pick a different code, change it below. -->
-  <script data-goatcounter="https://harishvenky29.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script data-goatcounter="https://harishvenky29.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 
   <script>
     // ── Project gallery lightbox ──
@@ -1452,6 +1447,20 @@
             cap: 'The Gazebo office world, with the Nav2 patrol route between rooms.' },
           { type: 'img', src: 'images/office-slam-map.png', alt: 'Final LIDAR-only occupancy map', pixel: true,
             cap: 'The finished LIDAR-only map from SLAM Toolbox.' }
+        ],
+        llm: [
+          { type: 'video', src: 'images/llm-robot-find.mp4', poster: 'images/llm-robot-find.jpg',
+            cap: '"Find someone", "find the blue object", "find the green object": the robot checks its memory, searches likely rooms and drives to what YOLO or the colour detector finds.' },
+          { type: 'video', src: 'images/llm-robot-chat.mp4', poster: 'images/llm-robot-chat.jpg',
+            cap: 'Chat commands: the local LLM turns plain English into validated actions and the robot routes through the house (6x speed).' },
+          { type: 'video', src: 'images/llm-robot-follow.mp4', poster: 'images/llm-robot-follow.jpg',
+            cap: '"Follow me": a LIDAR person tracker keeps the robot about 1 m behind a walking person, through doorways (4x speed).' },
+          { type: 'img', src: 'images/llm-robot-rviz.jpg', alt: 'RViz view of the house with room and place labels, remembered objects and the planned route',
+            cap: 'RViz: room and place labels, remembered objects and the live route while the robot looks for a cup.' },
+          { type: 'img', src: 'images/llm-robot-tour.jpg', alt: 'Floor plan of the 7-room house with the place graph and a full tour path',
+            cap: 'The 20 × 14 m house: 14 named places, the doorway graph used for routing, and a full simulated tour.' },
+          { type: 'img', src: 'images/llm-robot-slam-map.png', alt: 'Occupancy map of the house built by SLAM', pixel: true,
+            cap: 'Map built live by SLAM Toolbox during "patrol the house".' }
         ]
       };
       const lb = document.getElementById('lightbox');

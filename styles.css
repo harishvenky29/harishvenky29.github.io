@@ -1,7 +1,3 @@
-/* =============================================
-   Harish Venkatesan Portfolio — styles.css
-   Based on original structure, refined orange theme
-   ============================================= */
 
 :root {
   --bg:           #030712;
@@ -1008,3 +1004,8 @@ button.proj-media:hover img { transform: scale(1.04); }
   .lightbox { padding: 10px; }
   .lightbox-stage { height: 55vh; }
 }
+
+/* ── Mobile menu button: turns into an X while the menu is open ── */
+.nav-toggle span { transition: transform 0.2s ease; }
+.nav-toggle.open span:first-child { transform: translateY(3px) rotate(45deg); }
+.nav-toggle.open span:last-child { transform: translateY(-3px) rotate(-45deg); }
