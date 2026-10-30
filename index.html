@@ -66,8 +66,8 @@
                 class="typewriter-cursor">|</span></span>
           </p>
           <p class="hero-body">
-            I build robots that map, navigate and respond to voice and vision — using ROS 2, SLAM,
-            Nav2, OpenCV and LLM tool calling. MSc Intelligent Robotics graduate from the University
+            I build robots that map, navigate, pick and place, and respond to voice, vision and gestures —
+            using ROS 2, SLAM, Nav2, OpenCV, inverse kinematics and LLM tool calling. MSc Intelligent Robotics graduate from the University
             of York, with 15 months as a software engineer at Virtusa behind me.
           </p>
           <div class="hero-actions">
@@ -409,25 +409,24 @@
           </article>
 
           <article class="card activity-card">
-            <div class="proj-media">
-              <svg class="proj-art" viewBox="0 0 320 160" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M20 38 V22 H38 M182 22 H200 V38 M200 122 V138 H182 M38 138 H20 V122"/>
-                <path d="M110 70 V90 M100 80 H120" opacity=".7"/><circle cx="110" cy="80" r="3" opacity=".7"/>
-                <circle cx="146" cy="66" r="15"/>
-                <rect x="126" y="46" width="40" height="40" stroke-dasharray="4 3"/>
-                <path d="M126 46 V34 H186 V46"/><text x="130" y="43" font-family="Inter, sans-serif" font-size="9" fill="currentColor" stroke="none">target 0.94</text>
-                <path d="M113 78 L130 70" stroke-dasharray="2 3"/><text x="72" y="104" font-family="Inter, sans-serif" font-size="9" fill="currentColor" stroke="none">error → steer</text>
-                <path d="M208 80 H232"/><path d="M226 75 l6 5 -6 5"/>
-                <circle cx="268" cy="100" r="14"/><path d="M268 100 L280 94"/>
-                <path d="M250 70 A 32 32 0 0 1 296 76"/><path d="M290 70 l6 6 -8 2"/>
-                <text x="246" y="134" font-family="monospace" font-size="9" fill="currentColor" stroke="none">cmd_vel</text>
-              </svg>
-            </div>
+            <button type="button" class="proj-media proj-photo" data-gallery="rebel" aria-label="Open the Hand-Controlled Pick &amp; Place gallery: demo video, hand tracking view and arm renders">
+              <video autoplay muted loop playsinline preload="metadata" poster="images/rebel-hand-card.jpg" aria-label="The arm in Gazebo following a hand tracked from a webcam and moving cubes between trays">
+                <source src="images/rebel-hand-card.mp4" type="video/mp4" />
+              </video>
+              <span class="play-badge"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Demo &amp; gallery</span>
+            </button>
             <div class="proj-num">06</div>
-            <h3>Camera Vision to Robot Control</h3>
-            <p>A ROS 2 Jazzy system on Ubuntu 24.04, running in Gazebo simulation: a camera-equipped robot processes its
-              live feed with OpenCV, and what it detects drives the robot's movement, steering it towards the target.</p>
-            <div class="tag-row"><span class="tag">ROS 2</span><span class="tag">Gazebo</span><span class="tag">OpenCV</span><span class="tag">Python</span><span class="tag">Computer Vision</span></div>
+            <h3>Hand-Controlled 6-DOF Pick &amp; Place</h3>
+            <p>An igus ReBeL 6-DOF arm in Gazebo, with a custom 3-finger gripper, that follows my hand from a laptop
+              webcam. MediaPipe tracks the palm and its rotation, a pinch grabs the nearest cube and an open hand sets it
+              down, so cubes can be moved between trays or stacked. Inverse kinematics is closed-form, splitting
+              position from the spherical wrist's orientation, and an auto mode runs a scripted tray-to-tray transfer.</p>
+            <p class="proj-result">FK checked against the URDF to <strong>1e-15</strong> · <strong>0.19–0.52 m</strong> reach · wrist <strong>±80°</strong> from hand rotation</p>
+            <div class="tag-row"><span class="tag">ROS 2</span><span class="tag">Gazebo</span><span class="tag">ros2_control</span><span class="tag">Inverse Kinematics</span><span class="tag">MediaPipe</span><span class="tag">OpenCV</span><span class="tag">6-DOF Arm</span><span class="tag">Python</span></div>
+            <div class="project-links">
+              <a class="btn primary small" href="https://github.com/harishvenky29/ros2-rebel-hand-pick-place" target="_blank" rel="noopener">GitHub repo</a>
+              <button type="button" class="btn outline small" data-gallery="rebel">View gallery</button>
+            </div>
           </article>
 
           <!-- Add more projects here as new <article class="card activity-card"> blocks (07, 08...) -->
@@ -454,6 +453,7 @@
               <li>Gazebo · RViz · URDF / xacro</li>
               <li>SLAM &amp; Autonomous Navigation</li>
               <li>Manipulator Dynamics &amp; Control (Computed Torque, PID)</li>
+              <li>Inverse Kinematics · ros2_control</li>
               <li>Sensor Fusion (LiDAR, IMU, Camera)</li>
               <li>Computer Vision · OpenCV</li>
               <li>Reinforcement Learning</li>
@@ -498,7 +498,8 @@
             <ul>
               <li>PyTorch · TensorFlow</li>
               <li>Deep Learning (CNN, Transformers)</li>
-              <li>Object Detection (YOLOv5) · CVAT</li>
+              <li>Object Detection (YOLOv5, YOLO11) · CVAT</li>
+              <li>Hand Tracking (MediaPipe)</li>
               <li>LLM Integration (Tool Calling)</li>
               <li>Scikit-learn</li>
               <li>Data Analysis (Google Data Analytics)</li>
@@ -1461,6 +1462,18 @@
             cap: 'The 20 × 14 m house: 14 named places, the doorway graph used for routing, and a full simulated tour.' },
           { type: 'img', src: 'images/llm-robot-slam-map.png', alt: 'Occupancy map of the house built by SLAM', pixel: true,
             cap: 'Map built live by SLAM Toolbox during "patrol the house".' }
+        ],
+        rebel: [
+          { type: 'video', src: 'images/rebel-hand-demo.mp4', poster: 'images/rebel-hand-demo.jpg',
+            cap: 'Real run: the arm follows my hand from a laptop webcam and stacks all three cubes (4x speed).' },
+          { type: 'img', src: 'images/rebel-hand-tracking.jpg', alt: 'Gazebo with the arm and trays next to the webcam view with the tracked hand skeleton and tray outlines',
+            cap: 'Gazebo next to the tracker window: MediaPipe hand landmarks, hand yaw and the two trays mapped onto the camera image.' },
+          { type: 'img', src: 'images/rebel-grasp.jpg', alt: 'Render of the arm gripping a cube on the blue tray with its three-finger gripper',
+            cap: 'Grasp pose: the wrist lines the three fingers up with the cube (rendered from the package URDF and IK).' },
+          { type: 'img', src: 'images/rebel-transfer.jpg', alt: 'Render of the arm carrying a cube between the two trays',
+            cap: 'Carrying a cube from tray A to tray B (rendered from the package URDF and IK).' },
+          { type: 'img', src: 'images/rebel-joints.jpg', alt: 'Render of the arm with its six joints labelled, from base yaw to wrist roll',
+            cap: 'The six joints: base yaw, shoulder and elbow pitch, and a roll-pitch-roll spherical wrist, which lets IK be solved in closed form.' }
         ]
       };
       const lb = document.getElementById('lightbox');
